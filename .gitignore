@@ -1,0 +1,13 @@
+# 1. Ignore private environment variables containing database passwords
+config/.env
+
+# 2. Ignore the virtual environment folder
+venv/
+
+# 3. Ignore temporary Python compilation files
+__pycache__/
+*.pyc
+
+# 4. Ignore local operating system junk files
+.DS_Store
+Thumbs.db

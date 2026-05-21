@@ -1,0 +1,18 @@
+2026-05-21 11:27:20,679 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-05-21 11:27:20,713 - INFO - Platform process kicked off via main.py Entry Point.
+2026-05-21 11:27:20,943 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-21 11:27:20,944 - INFO - Database connection test completed and closed safely.
+2026-05-21 11:43:22,429 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-05-21 11:43:22,432 - INFO - Platform process kicked off via main.py Entry Point.
+2026-05-21 11:43:22,586 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-21 11:43:22,586 - INFO - Database connection test completed and closed safely.
+2026-05-21 11:46:10,362 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-05-21 11:46:10,365 - INFO - Platform process kicked off via main.py Entry Point.
+2026-05-21 11:46:10,476 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-21 11:46:10,478 - INFO - Database connection test completed and closed safely.
+2026-05-21 12:05:38,882 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-05-21 12:05:39,026 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-21 12:19:26,091 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-05-21 12:19:26,094 - INFO - Platform process kicked off via main.py Entry Point.
+2026-05-21 12:19:26,339 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-21 12:19:26,405 - INFO - Database connection test completed and closed safely.
