@@ -11,6 +11,11 @@ os.makedirs(LOG_DIR, exist_ok=True)
 # 3. Target the absolute file path for app.log
 log_file_path = os.path.join(LOG_DIR, 'app.log')
 
+
+print(BASE_DIR)
+print(log_file_path)
+
+
 # 4. Standard basic configuration parameters
 logging.basicConfig(
     filename=log_file_path,

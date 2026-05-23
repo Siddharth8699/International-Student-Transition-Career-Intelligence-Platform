@@ -11,3 +11,6 @@ __pycache__/
 # 4. Ignore local operating system junk files
 .DS_Store
 Thumbs.db
+
+#5 Ignore logs file.
+logs/app.log

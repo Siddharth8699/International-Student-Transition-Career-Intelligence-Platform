@@ -12,6 +12,8 @@ def get_db_connection():
     """
     Opens a secure pipeline connection to your local PostgreSQL server.
     """
+    logger.info("Opening PostgreSQL database connection.")
+
     try:
         connection = psycopg2.connect(
             host=os.getenv("DB_HOST"),
@@ -25,5 +27,5 @@ def get_db_connection():
         
     except psycopg2.OperationalError as e:
         logger.error(f"Database connection failed! Error details: {e}")
-        print("❌ Database Connection Error! Check your logs/app.log file.")
+        print("Database Connection Error! Check your logs/app.log file.")
         return None

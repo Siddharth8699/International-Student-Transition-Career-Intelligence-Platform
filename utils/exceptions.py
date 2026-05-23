@@ -1,0 +1,2 @@
+class BackSignal(Exception):
+    pass
