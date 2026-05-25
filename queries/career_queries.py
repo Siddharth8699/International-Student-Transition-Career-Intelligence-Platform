@@ -1,69 +1,73 @@
 from queries.executor import _execute_query
+from queries.generic_queries import *
+
 
 def get_all_companies():
-    
-    query = ''' select * from companies order by company_id'''
-    rows = _execute_query(query, None, "fetchall")
-    return rows
+    return get_records("companies")
         
-
 
 def get_company_by_id(company_id):
-    
-    query = '''
-    select * from companies
-    where company_id = %s'''
-    params = (company_id,)
-    row = _execute_query(query, params)
-    return row
+    return get_records("companies", filters={"company_id": company_id}, single=True)
         
-
 
 def create_company(name, industry, country, website):
     
-    query = '''
-    insert into companies(name, industry, country, website)
-    values(%s, %s, %s, %s) returning *'''
-    params = (name, industry, country, website)
-    row = _execute_query(query, params, "fetchone", True)
-    return row
-        
+    payload = {"name":name,
+               "industry":industry,
+               "country":country,
+               "website":website}
+    
+    new_row = insert_record("companies",payload)
+    return new_row
 
 
 def check_company_exists(company_id):
-   
-    query = '''
-    select 1 from companies
-    where company_id = %s'''
-    params = (company_id,)
-    row = _execute_query(query, params)
-    return row is not None
-        
+    return check_entity_exists("companies", "company_id", company_id)
 
 
 def update_company(company_id, name, industry, country, website):
-    
-    query = '''
-    update companies
-    set name = %s,
-    industry = %s,
-    country = %s,
-    website = %s
-    where company_id = %s
-    returning *'''
-    params = (name, industry, country, website, company_id)
-    row = _execute_query(query, params, "fetchone", True)
-    return row
-    
 
+    payload = {"name":name,
+               "industry":industry,
+               "country":country,
+               "website":website}
+    
+    updated_row = update_record("companies","company_id",company_id,payload)
+    return updated_row
+    
 
 def delete_company(company_id):
-    
-    query = '''
-    delete from companies
-    where company_id = %s
-    returning *'''
-    params = (company_id, )
-    row = _execute_query(query, params, "fetchone", True)
-    return row
+    return delete_records("companies", filters={"company_id": company_id}, single=True)
+
+
+def search_companies_by_name(keyword):
+    return get_records("companies", search_columns=["name"], search_query=keyword, partial_match=True)
+
+
+def search_companies_by_industry(keyword):
+    return get_records("companies", search_columns=["industry"], search_query=keyword, partial_match=True)
+
+
+def search_companies_by_country(keyword):
+    return get_records("companies", search_columns=["country"], search_query=keyword, partial_match=True)
+
+
+def get_companies_sorted_by_name():
+    return get_records("companies", sort_by="name")
+
+
+def get_companies_sorted_by_industry():
+    return get_records("companies", sort_by="industry")
+
+
+def get_total_companies():
+    return aggregate_records("companies", "count")
+
+
+def get_companies_count_by_country():
+    return aggregate_records("companies", "count", group_by="country")
+
+
+def get_companies_count_by_industry():
+    return aggregate_records("companies", "count", group_by="industry")
         

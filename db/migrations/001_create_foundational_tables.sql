@@ -54,7 +54,7 @@ CREATE TABLE expense_categories (
 CREATE TABLE universities (
     university_id SERIAL PRIMARY KEY,
     name VARCHAR(255) UNIQUE NOT NULL,
-    country VARCHAR(100) DEFAULT 'Germany' NOT NULL,
+    country VARCHAR(100) NOT NULL,
     ranking INT,
     website VARCHAR(2083),
     created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,

@@ -1,67 +1,60 @@
 from queries.executor import _execute_query
+from queries.generic_queries import *
+
 
 def get_all_document_types():
-    
-        query = ''' select * from document_types order by document_type_id'''
-        rows =  _execute_query(query, None, "fetchall")
-        return rows
+    return get_records("document_types")
 
 
 
-def get_document_type_by_id(document_type_id):
-    
-        query = '''
-        select * from document_types
-        where document_type_id = %s'''
-        params = (document_type_id,)
-        row = _execute_query(query, params)
-        return row
+def get_document_type_by_id(document_type_id):   
+    return get_records("document_types", filters={"document_type_id": document_type_id}, single=True)
         
 
 
 def create_document_type(name, global_category, description):
     
-        query = '''
-        insert into document_types(name, global_category, description)
-        values(%s, %s , %s) returning *'''
-        params = (name, global_category, description)
-        row = _execute_query(query, params, "fetchone", True)
-        return row
-
-
-        
-def check_document_type_exists(document_type_id):
+    payload = {"name":name,
+               "global_category":global_category,
+               "description":description}
     
-    query = '''
-    select 1 from document_types
-    where document_type_id = %s'''
-    params = (document_type_id,)
-    row = _execute_query(query, params)
-    return row is not None
-        
-    
+    new_row = insert_record("document_types", payload)
+    return new_row
+
+  
+def check_document_type_exists(document_type_id):   
+    return check_entity_exists("document_types", "document_type_id", document_type_id)
+           
 
 def update_document_type(document_type_id, name, global_category, description):
     
-    query = '''
-    update document_types
-    set name = %s,
-    global_category = %s,
-    description = %s
-    where document_type_id = %s
-    returning *'''
-    params = (name, global_category, description, document_type_id)
-    row = _execute_query(query, params, "fetchone", True)
-    return row
-
-
-
-def delete_document_type(document_type_id):
+    payload = {"name":name,
+               "global_category":global_category,
+               "description":description}
     
-    query = '''
-    delete from document_types
-    where document_type_id = %s
-    returning *'''
-    params = (document_type_id, )
-    row = _execute_query(query, params, "fetchone", True)
-    return row
+    updated_row = update_record("document_types","document_type_id",document_type_id,payload)
+    return updated_row
+
+
+def delete_document_type(document_type_id): 
+    return delete_records("document_types", filters={"document_type_id": document_type_id}, single=True)
+
+
+def get_document_types_by_category(global_category):
+    return get_records("document_types", filters={"global_category": global_category})
+
+
+def search_document_types_by_name(keyword):
+    return get_records("document_types", search_columns=["name"], search_query=keyword, partial_match=True)
+
+
+def get_document_types_sorted_by_name():
+    return get_records("document_types", sort_by="name")
+
+
+def get_total_document_types():
+    return aggregate_records("document_types","count")
+
+
+def get_document_types_count_by_category():
+    return aggregate_records("document_types", "count", group_by="global_category")
