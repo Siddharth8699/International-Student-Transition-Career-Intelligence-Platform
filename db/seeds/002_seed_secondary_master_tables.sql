@@ -5,18 +5,16 @@ BEGIN;
 -- ==========================================================
 
 
-INSERT INTO user_portfolio (user_id, item_type, title, summary, skills_text, credential_url, start_date, end_date) VALUES
--- Siddharth Dev (user_id = 1)
-(1, 'Education', 'B.Tech in Computer Science', 'Completed undergraduate degree focused on software engineering.', 'Python, SQL, Data Structures', 'https://credentials.example.com/sid-btech', '2019-08-01', '2023-05-30'),
-(1, 'Experience', 'Junior Backend Developer', 'Developed data pipelines and managed relational databases.', 'PostgreSQL, Django, Git', NULL, '2023-07-01', '2025-12-31'),
-(1, 'Language', 'German A2 Certification', 'Passed Goethe-Institut A2 examination.', 'German, Communication', 'https://credentials.example.com/sid-a2', '2025-02-01', '2025-05-15'),
+INSERT INTO user_profiles (user_id, headline, summary, education, experience, projects, skills, languages, certificates, resume_url) VALUES
+--user_id = 1
+(1, 'Backend Engineering Student', 'Preparing for international education and backend opportunities.', 'B.Tech Computer Science', 'Junior Backend Developer', 'International Student Transition Platform, Portfolio CLI System', 'Python, PostgreSQL, SQL, Git', 'English C1, German A2', 'Goethe A2', 'https://resume.example.com/siddharth'),
 
--- Elena Rostova (user_id = 2)
-(2, 'Project', 'Automated Portfolio Tracker', 'Built a local terminal application to manage mock user assets.', 'Python, SQLite, JSON', 'https://github.com/elena/portfolio-tracker', '2026-01-10', '2026-02-20'),
-(2, 'Skill', 'Advanced Data Analysis', 'Mastered tabular manipulation and statistical aggregation techniques.', 'Pandas, NumPy, Excel', NULL, NULL, NULL),
+--user_id = 2
+(2, 'Data & Automation Enthusiast', 'Interested in analytics and automation workflows.', 'Bachelor of Information Systems', NULL, 'Automated Portfolio Tracker', 'Python, SQLite, JSON, Pandas', 'English B2, Ukrainian Native', NULL, 'https://resume.example.com/elena'),
 
--- Carlos Mendez (user_id = 3)
-(3, 'Certificate', 'AWS Certified Cloud Practitioner', 'Validation of overall understanding of the AWS Cloud platform.', 'AWS, Cloud Computing, Security', 'https://credentials.example.com/carlos-aws', '2024-11-01', '2024-11-15');
+--user_id = 3
+(3, 'Cloud & Backend Engineering Candidate', 'Building cloud and backend capabilities.', 'Bachelor of Software Engineering', NULL, 'Cloud Deployment Sandbox', 'AWS, Python, Security', 'Spanish Native, English B2', 'AWS Certified Cloud Practitioner', 'https://resume.example.com/carlos');
+
 
 
 -- ==========================================================

@@ -42,6 +42,49 @@ QUERYABLE_SCHEMA = {
         "industry",
         "country",
         "website"
+    },
+
+    "user_profiles": {
+        "profile_id",
+        "user_id",
+        "headline",
+        "summary",
+        "education",
+        "experience",
+        "projects",
+        "skills",
+        "languages",
+        "certificates",
+        "resume_url"
+    },
+
+    "programs": {
+        "program_id",
+        "university_id",
+        "name",
+        "degree",
+        "field_of_study",
+        "duration_semesters",
+        "tuition_fee"
+    },
+
+    "intakes": {
+        "intake_id",
+        "university_id",
+        "name",
+        "start_month",
+        "application_deadline"
+    },
+
+    "jobs": {
+        "job_id",
+        "company_id",
+        "title",
+        "description",
+        "location",
+        "job_type",
+        "posted_date",
+        "source_url"
     }
 
 }
