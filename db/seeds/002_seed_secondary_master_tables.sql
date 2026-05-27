@@ -37,13 +37,18 @@ INSERT INTO programs (university_id, name, degree, field_of_study, duration_seme
 -- ==========================================================
 
 
-INSERT INTO intakes (university_id, name, start_month, application_deadline) VALUES
--- TU Berlin (university_id = 1)
-(1, 'Winter Semester 2026', 'October', '2026-05-31'),
-(1, 'Summer Semester 2027', 'April', '2026-10-31'),
+INSERT INTO intakes (program_id, name, start_month, application_deadline) VALUES
 
--- RWTH Aachen (university_id = 2)
-(2, 'Winter Semester 2026', 'October', '2026-03-01');
+-- Program 1
+(1, 'Winter', 'October', '2026-05-31'),
+(1, 'Summer', 'April', '2026-10-31'),
+
+-- Program 2
+(2, 'Winter', 'October', '2026-03-01'),
+
+-- Program 3
+(3, 'Winter', 'September', '2026-06-15'),
+(3, 'Summer', 'March', '2026-01-15');
 
 
 -- ==========================================================

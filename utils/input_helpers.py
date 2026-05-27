@@ -77,7 +77,7 @@ def get_integer(prompt, min_threshold = 0, exists_db_callback=None, missing_db_e
     return _execute_abstract_input_workflow(prompt, cast_logic, validation_logic)
 
 
-def get_float(prompt, min_threshold=0,exists_db_callback=None,missing_db_err_msg=None):
+def get_float(prompt, min_threshold=0.00,exists_db_callback=None,missing_db_err_msg=None):
 
     def cast_logic(raw):
         try:
@@ -180,15 +180,45 @@ def get_required_text(prompt):
 
     
 
-def get_optional_integer(prompt,  min_threshold=0, exists_db_callback=None, missing_db_err_msg=None):
+def get_optional_integer(prompt, min_threshold=0, default_value = None, exists_db_callback=None, missing_db_err_msg=None):
 
     def cast_logic(raw):
 
         if not raw:
-            return None
+            return default_value
 
         try:
             return int(raw)
+
+        except ValueError:
+            raise ValueError("Please enter a valid number.")
+
+
+    def validation_logic(value):
+
+        if (value is not None and value < min_threshold):
+            return (f"Value should be at least {min_threshold}.")
+
+        if (value is not None
+            and exists_db_callback
+            and not exists_db_callback(value)):
+            return (missing_db_err_msg or "Reference matching ID could not be located in database.")
+
+        return None
+
+
+    return _execute_abstract_input_workflow(prompt, cast_logic, validation_logic)
+
+
+def get_optional_float(prompt, min_threshold=0.00, default_value = None, exists_db_callback=None, missing_db_err_msg=None):
+
+    def cast_logic(raw):
+
+        if not raw:
+            return default_value
+
+        try:
+            return float(raw)
 
         except ValueError:
             raise ValueError("Please enter a valid number.")
@@ -223,3 +253,40 @@ def confirm_delete(prompt):
 
 
     return _execute_abstract_input_workflow(prompt, cast_logic)
+
+
+DEGREE_TYPES = {
+    "1": "Bachelor",
+    "2": "Master",
+    "3": "PhD",
+    "4": "Diploma",
+    "5": "Certificate",
+    "6": "Foundation",
+    "7": "Other"
+}
+
+
+def choose_degree():
+
+    while True:
+
+        print("""
+        Choose degree:
+
+        1. Bachelor
+        2. Master
+        3. PhD
+        4. Diploma
+        5. Certificate
+        6. Foundation
+        7. Other
+        """)
+
+        choice = get_integer("Enter choice: ")
+
+        degree = DEGREE_TYPES.get(str(choice))
+
+        if degree:
+            return degree
+
+        print("Invalid choice.")

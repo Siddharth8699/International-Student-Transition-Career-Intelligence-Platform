@@ -33,7 +33,7 @@ CREATE TABLE programs (
     degree VARCHAR(50) NOT NULL,
     field_of_study VARCHAR(150) NOT NULL,
     duration_semesters INT NOT NULL,
-    tuition_fee NUMERIC(12,2) DEFAULT 0.00 NOT NULL,
+    tuition_fee NUMERIC(12,2) NOT NULL,
     created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updated_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
     
@@ -47,12 +47,15 @@ CREATE TABLE programs (
 -- ==========================================================
 CREATE TABLE intakes (
     intake_id SERIAL PRIMARY KEY,
-    university_id INT NOT NULL REFERENCES universities(university_id) ON DELETE CASCADE,
-    name VARCHAR(100) NOT NULL,
+    program_id INT NOT NULL
+    REFERENCES programs(program_id) ON DELETE CASCADE,
+    name VARCHAR(50) NOT NULL,
     start_month VARCHAR(20) NOT NULL,
     application_deadline DATE NOT NULL,
     created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    updated_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL
+    updated_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
+
+    CONSTRAINT unique_program_intake UNIQUE (program_id, name)
 );
 
 -- ==========================================================

@@ -5,6 +5,17 @@ DOCUMENT_CATEGORIES = {
 }
 
 
+DEGREE_TYPES = {
+    "1": "Bachelor",
+    "2": "Master",
+    "3": "PhD",
+    "4": "Diploma",
+    "5": "Certificate",
+    "6": "Foundation",
+    "7": "Other"
+}
+
+
 QUERYABLE_SCHEMA = {
 
     "users": {
