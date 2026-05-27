@@ -12,9 +12,10 @@ def get_university_by_id(university_id):
         
 
 
-def create_university(name, country, ranking, website):
+def create_university(name, university_type, country, ranking, website):
    
     payload = {"name":name,
+               "university_type":university_type,
                "country":country,
                "ranking":ranking,
                "website":website}
@@ -28,9 +29,10 @@ def check_university_exists(university_id):
     return check_entity_exists("universities", "university_id", university_id)      
 
 
-def update_university(university_id, name, country, ranking, website):
+def update_university(university_id, name, university_type, country, ranking, website):
    
     payload = {"name":name,
+               "university_type":university_type,
                "country":country,
                "ranking":ranking,
                "website":website}
@@ -106,4 +108,3 @@ def get_universities_count_by_country():
     return aggregate_records("universities", "count", group_by="country")
 
 
-        

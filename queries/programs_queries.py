@@ -72,7 +72,7 @@ def get_affordable_programs():
 def search_programs_by_university_name(keyword):
 
     query = """
-    SELECT p.*
+    SELECT u.name, p.*
     FROM programs p
     JOIN universities u
     ON p.university_id = u.university_id
@@ -88,16 +88,16 @@ def get_program_statistics_summary():
 
     query = '''SELECT
     COUNT(*) AS total_programs,
-    AVG(tuition_fee) AS avg_tuition,
-    AVG(duration_semesters) AS avg_duration
+    round(AVG(tuition_fee),2) AS avg_tuition,
+    round(AVG(duration_semesters),2) AS avg_duration
     FROM programs'''
 
     result = _execute_query(query)
 
     return {
         "total_programs": result[0],
-        "avg_tuition": result[1],
-        "avg_duration": result[2]
+        "avg_tuition_fee": result[1],
+        "avg_semester_duration": result[2]
         }
 
 
@@ -106,7 +106,7 @@ def get_university_program_distribution():
     query = '''SELECT
     u.name, COUNT(*)
     FROM programs p
-    JOIN universities uON p.university_id=u.university_id
+    JOIN universities u ON p.university_id=u.university_id
     GROUP BY u.name
     ORDER BY COUNT(*) DESC'''
 

@@ -169,6 +169,29 @@ def get_date(prompt):
     return _execute_abstract_input_workflow(prompt, cast_logic, validation_logic)
 
 
+
+def get_any_date(prompt):
+
+    def cast_logic(raw):
+        if not raw:
+            raise ValueError("Field cannot be empty.")
+        
+        try:
+            parsed_date = datetime.strptime(
+                raw,
+                "%Y-%m-%d"
+            ).date()
+
+            return parsed_date
+
+        except ValueError:
+            raise ValueError("Please use the YYYY-MM-DD format (e.g., 2026-05-20).")
+    
+    return _execute_abstract_input_workflow(prompt, cast_logic)
+
+
+
+
 def get_required_text(prompt):
 
     def cast_logic(raw):
@@ -255,16 +278,6 @@ def confirm_delete(prompt):
     return _execute_abstract_input_workflow(prompt, cast_logic)
 
 
-DEGREE_TYPES = {
-    "1": "Bachelor",
-    "2": "Master",
-    "3": "PhD",
-    "4": "Diploma",
-    "5": "Certificate",
-    "6": "Foundation",
-    "7": "Other"
-}
-
 
 def choose_degree():
 
@@ -288,5 +301,81 @@ def choose_degree():
 
         if degree:
             return degree
+
+        print("Invalid choice.")
+
+
+def choose_university_type():
+
+    while True:
+
+        print("""
+        Choose university type:
+
+        1. Public
+        2. Private
+        3. Other
+        """)
+
+        choice = get_integer("Enter choice: ")
+
+        value = UNIVERSITY_TYPES.get(str(choice))
+
+        if value:
+            return value
+
+        print("Invalid choice.")
+
+
+def choose_month():
+
+    while True:
+
+        print("""
+        Choose start month:
+
+        1. January
+        2. February
+        3. March
+        4. April
+        5. May
+        6. June
+        7. July
+        8. August
+        9. September
+        10. October
+        11. November
+        12. December
+        """)
+
+        choice = get_integer("Enter choice: ")
+        month = MONTHS.get(str(choice))
+
+        if month:
+            return month
+
+        print("Invalid choice.")
+
+
+
+def choose_intake():
+
+    while True:
+
+        print("""
+        Choose intake:
+
+        1. Winter
+        2. Summer
+        3. Spring
+        4. Fall
+        """)
+
+        choice = get_integer("Enter choice: ")
+
+        intake = INTAKE_TYPES.get(str(choice))
+
+        if intake:
+            return intake
 
         print("Invalid choice.")

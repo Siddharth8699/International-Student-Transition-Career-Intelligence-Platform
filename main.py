@@ -5,6 +5,7 @@ from queries.academic_queries import *
 from queries.career_queries import *
 from queries.user_profiles_queries import *
 from queries.programs_queries import *
+from queries.intakes_queries import *
 from utils.input_helpers import *
 from utils.display_helpers import *
 from utils.logger import logger
@@ -703,7 +704,7 @@ def main():
                                         break
                         
                                     elif choice == "1":
-
+                                        
                                         search_keyword = get_clean_name("Enter the search expense category keyword: ")
                                         rows = search_expense_categories_by_name(search_keyword)
                                         display_result(rows)
@@ -739,7 +740,6 @@ def main():
                         2. Explorer
                         3. Reports
                         4. Program Management
-                        5. Intake Management
                         0. Back to Main Menu
                                        
                         Enter your choice: 
@@ -788,10 +788,11 @@ def main():
                                     elif choice == "3":
                                         
                                         name = get_entity_name("Enter the university name: ")
+                                        university_type = choose_university_type()
                                         country = get_clean_name("Enter the university country: ")
                                         ranking = get_optional_integer("Enter ranking (leave blank if unknown): ")
                                         website = get_required_text("Enter the university website link: ")
-                                        row = create_university(name, country, ranking, website)
+                                        row = create_university(name, university_type, country, ranking, website)
                                         display_result(row, "university not inserted. Something went wrong")
 
 
@@ -799,10 +800,11 @@ def main():
 
                                         university_id = get_integer("Enter the university id: ", 1, check_university_exists, "University id doesnt not exist.")
                                         name = get_entity_name("Enter the university name: ")
+                                        university_type = choose_university_type()
                                         country = get_clean_name("Enter the university country: ")
                                         ranking = get_optional_integer("Enter the university ranking or leave blank if unknown: ")
                                         website = get_required_text("Enter the university website link: ")
-                                        row = update_university(university_id, name, country, ranking, website)
+                                        row = update_university(university_id, name, university_type, country, ranking, website)
                                         display_result(row, "university not updated. Something went wrong")
                                     
 
@@ -940,6 +942,7 @@ def main():
                                     1. Programs CRUD
                                     2. Explorer
                                     3. Reports
+                                    4. Intakes
                                     0. Back to University Menu
                                                    
                                     Enter your choice: 
@@ -993,12 +996,12 @@ def main():
                                                     name = get_entity_name("Enter the program name: ")
                                                     degree = choose_degree()
                                                     if not check_program_uniqueness(university_id, name, degree):
-                                                        return
+                                                        continue
                                                     field_of_study = get_entity_name("Enter the field of study: ")
                                                     duration_semesters = get_integer("Enter the number of semesters: ", 1)
                                                     tuition_fee = get_float("Enter the tution fee: ")
                                                     row = create_program(university_id, name, degree, field_of_study, duration_semesters, tuition_fee)
-                                                    display_result(row)
+                                                    display_result(row, "Program not Created.")
 
 
                                                 elif choice == "4":
@@ -1007,19 +1010,22 @@ def main():
                                                     name = get_entity_name("Enter the program name: ")
                                                     degree = choose_degree()
                                                     if not check_program_uniqueness(university_id, name, degree):
-                                                        return
+                                                        continue
                                                     field_of_study = get_entity_name("Enter the field of study: ")
                                                     duration_semesters = get_integer("Enter the number of semesters: ", 1)
                                                     tuition_fee = get_float("Enter the tution fee: ")
                                                     row = update_program(program_id, name, degree, field_of_study, duration_semesters, tuition_fee)
-                                                    display_result(row)
+                                                    display_result(row, "Program not updated.")
 
 
                                                 elif choice == "5":
 
                                                     program_id = get_integer("Enter the program id: ", 1, check_program_exists, "Program id does not exist.")
-                                                    row = delete_program(program_id)
-                                                    display_result(row)
+                                                    if confirm_delete("Delete Program? (Y/N): "):
+                                                        row = delete_program(program_id)
+                                                        display_result(row, "Program not deleted.")
+                                                    else:
+                                                        print("Delete cancelled.")
 
 
                                             except BackSignal:
@@ -1037,6 +1043,7 @@ def main():
                                                 3. View Programs By University id
                                                 4. Filter Programs By Degree
                                                 5. View Affordable Programs
+                                                0. Back to Programn menu
                                                                                      
                                                 Enter your choice: 
                                                             
@@ -1058,7 +1065,7 @@ def main():
                                                 elif choice == "2":
 
                                                     search_keyword = get_entity_name("Enter the university name search keyword: ")
-                                                    rows = search_programs_by_university_name()
+                                                    rows = search_programs_by_university_name(search_keyword)
                                                     display_result(rows)
 
 
@@ -1072,19 +1079,20 @@ def main():
                                                 elif choice == "4":
 
                                                     degree = choose_degree()
-                                                    rows = get_programs_by_degree()
+                                                    rows = get_programs_by_degree(degree)
+                                                    display_result(rows)
 
 
                                                 elif choice == "5":
 
                                                     rows = get_affordable_programs()
                                                     display_result(rows)
+                                                    
 
 
                                             except BackSignal:
                                                 print("\n Form input canceled. Returning to Program Menu...")
                                                 continue
-
 
 
                                     elif choice == "3":
@@ -1095,6 +1103,7 @@ def main():
                                                                
                                                 1. Program Statistics Summary
                                                 2. University Program distribution
+                                                0. Back to Programs menu
                                                                                                             
                                                 Enter your choice: 
                                                             
@@ -1121,44 +1130,18 @@ def main():
                                             except BackSignal:
                                                 print("\n Form input canceled. Returning to Program Menu...")
                                                 continue
+                                    
 
-
-                                except BackSignal:
-                                    print("\n Form input canceled. Returning to Academic Menu...")
-                                    continue
-
-
-                        elif choice == "5":
-                            while True:
-                                try:
-
-                                    choice = input('''
-                                    1. Intakes CRUD
-                                    2. Explorer
-                                    3. Reports
-                                    0. Back to University Menu
-                                                   
-                                    Enter your choice: 
-                                                   
-                                    ''')
-
-                                    if choice == "0":
-
-                                        print("Going back to User Menu options..")
-                                        break
-
-
-                                    elif choice == "1":
-
+                                    elif choice == "4":
+                                        
                                         while True:
                                             try:
+
                                                 choice = input('''
-                                                1. View All Intakes
-                                                2. View Intake by id
-                                                3. Create Intake
-                                                4. Update Intake
-                                                5. Delete Intake
-                                                0. Back to Intakes Menu
+                                                1. Intakes CRUD
+                                                2. Explorer
+                                                3. Reports
+                                                0. Back to University Menu
                                                             
                                                 Enter your choice: 
                                                             
@@ -1172,23 +1155,164 @@ def main():
 
                                                 elif choice == "1":
 
-                                                    pass
+                                                    while True:
+                                                        try:
+                                                            choice = input('''
+                                                            1. View All Intakes
+                                                            2. View Intake by id
+                                                            3. Create Intake
+                                                            4. Update Intake
+                                                            5. Delete Intake
+                                                            0. Back to Intakes Menu
+                                                                        
+                                                            Enter your choice: 
+                                                                        
+                                                            ''')
+
+                                                            if choice == "0":
+
+                                                                print("Going back to Intakes Menu options..")
+                                                                break
+
+                                                            elif choice == "1":
+
+                                                                rows = get_all_intakes()
+                                                                display_result(rows)
+
+                                                            elif choice == "2":
+
+                                                                intake_id = get_integer("Enter the Intake id: ", 1, check_intake_exists, "Intake id does not exist.")
+                                                                row = get_intake_by_id(intake_id)
+                                                                display_result(row)
+
+                                                            elif choice == "3":
+
+                                                                program_id = get_integer("Enter the Program id: ", 1, check_program_exists, "Program id does not exist.")
+                                                                name = choose_intake()
+                                                                if not check_intake_uniqueness(program_id, name):
+                                                                    continue
+                                                                start_month = choose_month()
+                                                                application_deadline = get_any_date("Enter the application deadline date: ")
+                                                                row = create_intake(program_id, name, start_month, application_deadline)
+                                                                display_result(row, "Intke not created.")
+
+                                                            elif choice == "4":
+
+                                                                intake_id = get_integer("Enter the Intake id: ", 1, check_intake_exists, "Intake id does not exist.")
+                                                                name = choose_intake()
+                                                                if not check_intake_uniqueness(program_id, name):
+                                                                    continue
+                                                                start_month = choose_month()
+                                                                application_deadline = get_any_date("Enter the application deadline date: ")
+                                                                row = update_intake(intake_id, name, start_month, application_deadline)
+                                                                display_result(row, "Intake not updated.")
+
+                                                            elif choice == "5":
+
+                                                                intake_id = get_integer("Enter the Intake id: ", 1, check_intake_exists, "Intake id does not exist.")
+                                                                if confirm_delete("Delete Intake? (Y/N): "):
+                                                                    row = delete_intake(intake_id)
+                                                                    display_result(row) 
+                                                                else:
+                                                                    print("Delete cancelled.")
+
+                  
+
+                                                        except BackSignal:
+                                                            print("\n Form input canceled. Returning to Intakes Menu...")
+                                                            continue
+
+
+                                                elif choice == "2":
+
+                                                    while True:
+                                                        try:
+                                                            choice = input('''
+                                                            1. Search Intake By Name
+                                                            2. View Program Intakes
+                                                            3. View Upcoming Deadlines
+                                                            0. Back to Intakes Menu
+                                                                        
+                                                            Enter your choice: 
+                                                                        
+                                                            ''')
+
+                                                            if choice == "0":
+
+                                                                print("Going back to Intakes Menu options..")
+                                                                break
+
+                                                            elif choice == "1":
+
+                                                                name = choose_intake()
+                                                                rows = get_intake_by_name(name)
+                                                                display_result(rows)
+
+                                                            elif choice == "2":
+
+                                                                program_id = get_integer("Enter the program id: ", 1, check_program_exists, "Program id does not exist.")
+                                                                rows = get_intake_by_program_id(program_id)
+                                                                display_result(rows)
+
+                                                            elif choice == "3":
+
+                                                                rows = get_upcoming_deadline()
+                                                                display_result(rows)
+                                                                
+                                                            
+                                                        
+                                                        except BackSignal:
+                                                            print("\n Form input canceled. Returning to Intakes Menu...")
+                                                            continue
+
+
+                                                elif choice == "3":
+
+                                                    while True:
+                                                        try:
+                                                            choice = input('''
+                                                            1. Intake Statistics Summary
+                                                            2. Program Intake Distribution
+                                                            0. Back to Intakes Menu
+                                                                        
+                                                            Enter your choice: 
+                                                                        
+                                                            ''')
+
+                                                            if choice == "0":
+
+                                                                print("Going back to Intakes Menu options..")
+                                                                break
+
+                                                            elif choice == "1":
+
+                                                                row = get_intake_statistics_summary()
+                                                                display_metric(row)
+
+                                                            elif choice == "2":
+
+                                                                rows = get_program_intake_distribution()
+                                                                display_result(rows)
+
+
+                                                        except BackSignal:
+                                                            print("\n Form input canceled. Returning to Intakes Menu...")
+                                                            continue
 
 
                                             except BackSignal:
-                                                print("\n Form input canceled. Returning to Intakes Menu...")
+                                                print("\n Form input canceled. Returning to Programs Menu...")
                                                 continue
 
 
                                 except BackSignal:
-                                    print("\n Form input canceled. Returning to Academic Menu...")
+                                    print("\n Form input canceled. Returning to Universities Menu...")
                                     continue
-
 
 
                     except BackSignal:
-                                    print("\n Form input canceled. Returning to Main Menu...")
-                                    continue
+                        print("\n Form input canceled. Returning to Main Menu...")
+                        continue
 
 
 
@@ -1360,19 +1484,19 @@ def main():
                                         break
 
 
-                                    elif choice == "11":
+                                    elif choice == "1":
 
                                         row = get_total_companies()
                                         display_metric(row, "Total company")
 
 
-                                    elif choice == "12":
+                                    elif choice == "2":
 
                                         row = get_companies_count_by_country()
                                         display_result(row)
 
 
-                                    elif choice == "13":
+                                    elif choice == "3":
 
                                         row = get_companies_count_by_industry()
                                         display_result(row)

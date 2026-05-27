@@ -54,15 +54,15 @@ CREATE TABLE expense_categories (
 CREATE TABLE universities (
     university_id SERIAL PRIMARY KEY,
     name VARCHAR(255) UNIQUE NOT NULL,
+    university_type VARCHAR(20) NOT NULL,
     country VARCHAR(100) NOT NULL,
     ranking INT,
     website VARCHAR(2083),
     created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updated_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    CONSTRAINT check_positive_rank CHECK (
-        ranking > 0
-        OR ranking IS NULL
-    )
+    
+    CONSTRAINT check_positive_rank CHECK (ranking > 0 OR ranking IS NULL),
+    CONSTRAINT check_university_type CHECK (university_type IN ('Public', 'Private', 'Other'))
 );
 
 -- ==========================================================

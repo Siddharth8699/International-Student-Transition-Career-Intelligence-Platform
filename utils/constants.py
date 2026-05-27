@@ -16,6 +16,38 @@ DEGREE_TYPES = {
 }
 
 
+UNIVERSITY_TYPES = {
+    "1": "Public",
+    "2": "Private",
+    "3": "Other"
+}
+
+
+MONTHS = {
+    "1": "January",
+    "2": "February",
+    "3": "March",
+    "4": "April",
+    "5": "May",
+    "6": "June",
+    "7": "July",
+    "8": "August",
+    "9": "September",
+    "10": "October",
+    "11": "November",
+    "12": "December"
+}
+
+
+INTAKE_TYPES = {
+    "1": "Winter",
+    "2": "Summer",
+    "3": "Spring",
+    "4": "Fall"
+}
+
+
+
 QUERYABLE_SCHEMA = {
 
     "users": {
@@ -42,6 +74,7 @@ QUERYABLE_SCHEMA = {
     "universities": {
         "university_id",
         "name",
+        "university_type",
         "country",
         "ranking",
         "website"
@@ -81,7 +114,7 @@ QUERYABLE_SCHEMA = {
 
     "intakes": {
         "intake_id",
-        "university_id",
+        "program_id",
         "name",
         "start_month",
         "application_deadline"
