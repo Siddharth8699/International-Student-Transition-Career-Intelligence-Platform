@@ -93,25 +93,49 @@ CREATE TABLE intakes (
 -- =======================================================================================
 -- 4. CORPORATE VACANCIES / JOBS
 -- =======================================================================================
+
 CREATE TABLE jobs (
-    job_id       SERIAL PRIMARY KEY,
-    company_id   INT NOT NULL,
-    title        VARCHAR(255) NOT NULL,
-    description  TEXT,
-    location     VARCHAR(150),
-    job_type     VARCHAR(50),
-    posted_date  DATE,
-    source_url   VARCHAR(2083),
-    created_at   TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    updated_at   TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    job_id SERIAL PRIMARY KEY,
+    company_id INT NOT NULL REFERENCES companies(company_id) ON DELETE CASCADE,
+    title VARCHAR(255) NOT NULL,
+    location VARCHAR(150),
+    description TEXT,
+    location VARCHAR(150),
+    work_mode VARCHAR(30),
+    job_type VARCHAR(50),
+    salary_min NUMERIC(12,2),
+    salary_max NUMERIC(12,2),
+    currency VARCHAR(10),
+    posted_date DATE NOT NULL,
+    application_deadline DATE,
+    source_url VARCHAR(2083) NOT NULL,
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    updated_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
 
-    CONSTRAINT fk_job_company 
-        FOREIGN KEY (company_id) 
-        REFERENCES companies(company_id) 
-        ON DELETE CASCADE,
+    CONSTRAINT check_job_type CHECK (
+        job_type IN (
+            'Full-time',
+            'Part-time',
+            'Working Student',
+            'Internship',
+            'Contract'
+        )
+    ),
 
-    CONSTRAINT check_job_type 
-        CHECK (job_type IN ('Full-time', 'Part-time', 'Working Student', 'Internship') OR job_type IS NULL)
+    CONSTRAINT check_work_mode CHECK (
+        work_mode IN (
+            'Onsite',
+            'Hybrid',
+            'Remote'
+        )
+    ),
+
+    CONSTRAINT check_salary_range CHECK (
+        salary_min IS NULL
+        OR salary_max IS NULL
+        OR salary_min <= salary_max
+    )
 );
+
 
 COMMIT;

@@ -191,6 +191,34 @@ def get_any_date(prompt):
 
 
 
+def get_optional_date(prompt):
+
+    def cast_logic(raw):
+
+        if not raw:
+
+            return None
+
+        try:
+
+            parsed_date = datetime.strptime(
+                raw,
+                "%Y-%m-%d"
+            ).date()
+
+            return parsed_date
+
+        except ValueError:
+
+            raise ValueError(
+                "Please use the YYYY-MM-DD format (e.g., 2026-05-20)."
+            )
+
+    return _execute_abstract_input_workflow(prompt, cast_logic)
+
+
+
+
 
 def get_required_text(prompt):
 
@@ -378,4 +406,46 @@ def choose_intake():
         if intake:
             return intake
 
+        print("Invalid choice.")
+
+
+
+def choose_job_type(): 
+
+    while True: 
+
+        print(""" 
+        Choose job type: 
+        1. Full-time 
+        2. Part-time 
+        3. Working Student 
+        4. Internship 
+        5. Contract """) 
+        
+        choice = get_integer( "Enter choice: " ) 
+        job_type = JOB_TYPES.get( str(choice) ) 
+
+        if job_type: 
+            return job_type 
+        
+        print("Invalid choice.") 
+
+
+
+def choose_work_mode(): 
+
+    while True: 
+
+        print(""" 
+        Choose work mode: 
+        1. Onsite 
+        2. Hybrid 
+        3. Remote """) 
+        
+        choice = get_integer( "Enter choice: " ) 
+        work_mode = WORK_MODES.get( str(choice) ) 
+
+        if work_mode: 
+            return work_mode
+        
         print("Invalid choice.")

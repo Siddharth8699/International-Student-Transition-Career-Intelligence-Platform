@@ -47,6 +47,19 @@ INTAKE_TYPES = {
 }
 
 
+JOB_TYPES = {
+    "1": "Full-time",
+    "2": "Part-time",
+    "3": "Working Student",
+    "4": "Internship",
+    "5": "Contract" }
+
+
+WORK_MODES = {
+    "1": "Onsite",
+    "2": "Hybrid",
+    "3": "Remote" }
+
 
 QUERYABLE_SCHEMA = {
 

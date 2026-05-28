@@ -32,10 +32,10 @@ INSERT INTO intakes (program_id, name, start_month, application_deadline) VALUES
 (7, 'Fall', 'September', '2026-07-15'); -- Linked to Business (SRH)
 
 -- 4. CORPORATE VACANCIES / JOBS (Linked to valid company_id values)
-INSERT INTO jobs (company_id, title, description, location, job_type, posted_date, source_url) VALUES
-(1, 'Backend Engineering Working Student', 'Assist team in optimizing internal relational data workflows and testing Python script wrappers.', 'Munich, Germany', 'Working Student', '2026-05-20', 'https://jobs.siemens.com/vacancies/1092'),
-(1, 'Automation Systems Intern', 'Full-time internship focused on supporting engineering lifecycle simulations.', 'Erlangen, Germany', 'Internship', '2026-05-22', 'https://jobs.siemens.com/vacancies/1145'),
-(2, 'Junior Cloud Developer', 'Full-time role focused on developing and maintaining platform microservices.', 'Walldorf, Germany', 'Full-time', '2026-05-18', 'https://jobs.sap.com/vacancies/8834'),
-(2, 'Data Analytics Intern', 'Part-time data extraction role helping build enterprise report dashboards.', 'Berlin, Germany', 'Internship', '2026-05-24', NULL);
+INSERT INTO jobs (company_id, title, description, location, work_mode, job_type, salary_min, salary_max, currency, posted_date, application_deadline, source_url) VALUES
+(1, 'Backend Engineering Working Student', 'Assist team in optimizing internal relational data workflows and testing Python script wrappers.', 'Munich, Germany', 'Hybrid', 'Working Student', NULL, NULL, 'EUR', '2026-05-20', '2026-06-20', 'https://jobs.siemens.com/vacancies/1092'),
+(1, 'Automation Systems Intern', 'Full-time internship focused on supporting engineering lifecycle simulations.', 'Erlangen, Germany', 'Onsite', 'Internship', NULL, NULL, 'EUR', '2026-05-22', '2026-06-22', 'https://jobs.siemens.com/vacancies/1145'),
+(2, 'Junior Cloud Developer', 'Full-time role focused on developing and maintaining platform microservices.', 'Walldorf, Germany', 'Hybrid', 'Full-time', 55000.00, 70000.00, 'EUR', '2026-05-18', '2026-06-18', 'https://jobs.sap.com/vacancies/8834'),
+(2, 'Data Analytics Intern', 'Part-time data extraction role helping build enterprise report dashboards.', 'Berlin, Germany', 'Remote', 'Internship', NULL, NULL, 'EUR', '2026-05-24', '2026-06-24', NULL);
 
 COMMIT;

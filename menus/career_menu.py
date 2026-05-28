@@ -1,4 +1,5 @@
 from queries.career_management.companies import *
+from queries.career_management.jobs import *
 
 from utils.logger import logger
 
@@ -35,9 +36,9 @@ def handle_career_management():
 
                 handle_companies_menu()
 
-            # elif choice == "2":
+            elif choice == "2":
 
-            #     handle_jobs_menu()
+                handle_jobs_menu()
 
             elif choice == "0":
 
@@ -453,3 +454,361 @@ def handle_companies_reports_menu():
             logger.exception(e)
 
             print("System Error Shield Activated.")
+
+
+# ==========================================================
+# JOBS MANAGEMENT
+# ==========================================================
+
+#1.5.2
+def handle_jobs_menu():
+
+    while True:
+
+        try:
+
+            print("\n===== JOBS MANAGEMENT =====")
+
+            choice = input("""
+
+            1. Core Data Management (CRUD)
+            2. Data Explorer
+            3. Analytics & Reports
+            0. Back
+
+            Enter your choice:
+
+            """)
+
+            if choice == "1":
+
+                handle_jobs_crud_menu()
+
+            elif choice == "2":
+
+                handle_jobs_explorer_menu()
+
+            elif choice == "3":
+
+                handle_jobs_reports_menu()
+
+            elif choice == "0":
+
+                print(
+                    "Returning to Jobs Management..."
+                )
+
+                break
+
+            else:
+
+                print("Invalid choice.")
+
+        except Exception as e:
+
+            logger.exception(e)
+
+            print("System Error Shield Activated.")
+
+
+# ==========================================================
+# JOBS CRUD
+# ==========================================================
+
+#1.5.2.1
+def handle_jobs_crud_menu():
+
+    while True:
+
+        try:
+
+            print("\n===== JOBS : CRUD =====")
+
+            choice = input("""
+
+            1. View All Jobs 
+            2. View Job By ID
+            3. Create Job
+            4. Update Job
+            5. Delete Job
+            0. Back
+
+            Enter your choice:
+
+            """)
+
+            if choice == "0":
+
+                print(
+                    "Returning to Jobs Menu..."
+                )
+
+                break
+
+            elif choice == "1":
+
+                rows = get_all_jobs()
+
+                display_result(
+                    rows,
+                    "No job found."
+                )
+
+            elif choice == "2":
+
+                job_id = get_integer("Enter the job id: ")
+
+                row = get_job_by_id(job_id)
+
+                display_result(
+                    row,
+                    "Job not found."
+                )
+
+            elif choice == "3":
+
+                company_id = get_integer("Enter the company id:", 1, check_company_exists, "Company id does not exist.")
+                title = get_entity_name("Enter the job title: ")
+                location = get_entity_name("Enter the location: ")
+                description = get_text("Enter job desctiption: ")
+                work_mode = choose_work_mode()
+                job_type = choose_job_type()
+                salary_min = get_optional_float("Enter the min salary: ")
+                salary_max = get_optional_float("Enter the max salary: ")
+                if ( salary_min is not None and salary_max is not None and salary_min > salary_max ):
+                    print( "Minimum salary cannot exceed maximum salary." ) 
+                    continue
+                currency = get_clean_name("Enter the salary curency: ")
+                posted_date = get_date("Enter the job podting date: ")
+                application_deadline = get_optional_date("Enter the date")
+                source_url  = get_required_text("Enter the job source url: ")
+
+                row = create_job(company_id,title,location,description,work_mode,job_type,salary_min,salary_max,currency,posted_date,application_deadline,source_url)
+                display_result(row)
+                
+
+            elif choice == "4":
+
+                job_id = get_integer("Enter the job id: ", 1, check_job_exists, "Job id does not exist.")
+                title = get_entity_name("Enter the job title: ")
+                location = get_entity_name("Enter the location: ")
+                description = get_text("Enter job desctiption: ")
+                work_mode = choose_work_mode()
+                job_type = choose_job_type()
+                salary_min = get_optional_float("Enter the min salary: ")
+                salary_max = get_optional_float("Enter the max salary: ")
+                if ( salary_min is not None and salary_max is not None and salary_min > salary_max ):
+                    print( "Minimum salary cannot exceed maximum salary." ) 
+                    continue
+                currency = get_clean_name("Enter the salary curency: ")
+                posted_date = get_date("Enter the job podting date: ")
+                application_deadline = get_optional_date("Enter the date")
+                source_url  = get_required_text("Enter the job source url: ")
+
+                row = update_job(job_id,title,location,description,work_mode,job_type,salary_min,salary_max,currency,posted_date,application_deadline,source_url)
+                display_result(row)
+
+                
+
+            elif choice == "5":
+
+                job_id = get_integer(
+                    "Enter the job id: ",
+                    1,
+                    check_job_exists,
+                    "Job id does not exist."
+                )
+
+                if confirm_delete(
+                    "Delete job? (Y/N): "
+                ):
+
+                    row = delete_company(
+                        job_id
+                    )
+
+                    display_result(
+                        row,
+                        "Job not deleted."
+                    )
+
+                else:
+
+                    print("Delete cancelled.")
+
+            else:
+
+                print("Invalid choice.")
+
+        except BackSignal:
+
+            print(
+                "\nForm input canceled. Returning to Jobs Menu..."
+            )
+
+            continue
+
+        except Exception as e:
+
+            logger.exception(e)
+
+            print("System Error Shield Activated.")
+
+
+# ==========================================================
+# JOBS EXPLORER
+# ==========================================================
+
+#1.5.2.2
+def handle_jobs_explorer_menu():
+
+    while True:
+
+        try:
+
+            print("\n===== JOBS : EXPLORER =====")
+
+            choice = input("""
+
+            1. Search Jobs By Title 
+            2. Search Jobs By Location
+            3. Search Jobs By Company Name
+            4. Filter Jobs By Type
+            5. View Recent Job Listings
+            0. Back
+
+            Enter your choice:
+
+            """)
+
+            if choice == "0":
+
+                print(
+                    "Returning to Jobs Menu..."
+                )
+
+                break
+
+            elif choice == "1":
+
+                search_keyword = get_entity_name(
+                    "Enter the job title search keyword: "
+                )
+
+                rows = search_jobs_by_title(
+                    search_keyword
+                )
+
+                display_result(rows)
+
+            elif choice == "2":
+
+                search_keyword = get_entity_name(
+                    "Enter the job location search keyword: "
+                )
+
+                rows = search_jobs_by_location(
+                    search_keyword
+                )
+
+                display_result(rows)
+
+            elif choice == "3":
+
+                search_keyword = get_entity_name(
+                    "Enter the company name search keyword: "
+                )
+
+                rows = search_jobs_by_company(
+                    search_keyword
+                )
+
+                display_result(rows)
+
+            elif choice == "4":
+
+                job_type = choose_job_type
+                rows = get_jobs_by_job_type(job_type)
+                display_result(rows)
+
+            elif choice == "5":
+
+                rows = get_recent_job_listings()
+
+                display_result(rows)
+
+            else:
+
+                print("Invalid choice.")
+
+        except BackSignal:
+
+            print(
+                "\nForm input canceled. Returning to Jobs Menu..."
+            )
+
+            continue
+
+        except Exception as e:
+
+            logger.exception(e)
+
+            print("System Error Shield Activated.")
+
+
+# ==========================================================
+# JOBS REPORTS
+# ==========================================================
+
+#1.5.2.3
+def handle_jobs_reports_menu():
+
+    while True:
+
+        try:
+
+            print("\n===== JOBS : REPORTS =====")
+
+            choice = input("""
+
+            1. Job Market Summary
+
+            Enter your choice:
+
+            """)
+
+            if choice == "0":
+
+                print(
+                    "Returning to Jobs Menu..."
+                )
+
+                break
+
+            elif choice == "1":
+
+                row = get_job_market_summary()
+
+                display_metric(
+                    row,
+                    "Total companies"
+                )
+
+            else:
+
+                print("Invalid choice.")
+
+        except BackSignal:
+
+            print(
+                "\nForm input canceled. Returning to Jobs Menu..."
+            )
+
+            continue
+
+        except Exception as e:
+
+            logger.exception(e)
+
+            print("System Error Shield Activated.")
+
