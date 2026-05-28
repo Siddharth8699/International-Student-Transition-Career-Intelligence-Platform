@@ -2179,3 +2179,267 @@
 2026-05-27 23:15:42,990 - INFO - Query executed successfully.
 2026-05-27 23:15:42,990 - INFO - Data fetched from cursor memory buffer.
 2026-05-27 23:15:42,990 - INFO - Database connection closed.
+2026-05-28 00:38:46,498 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-05-28 00:38:57,719 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:38:57,857 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:38:57,857 - INFO - Executing database query.
+2026-05-28 00:38:57,868 - INFO - Query executed successfully.
+2026-05-28 00:38:57,870 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:38:57,870 - INFO - Database connection closed.
+2026-05-28 00:39:13,811 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:39:13,887 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:39:13,887 - INFO - Executing database query.
+2026-05-28 00:39:13,901 - INFO - Query executed successfully.
+2026-05-28 00:39:13,901 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:39:13,901 - INFO - Database connection closed.
+2026-05-28 00:39:13,901 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:39:13,963 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:39:13,963 - INFO - Executing database query.
+2026-05-28 00:39:13,967 - INFO - Query executed successfully.
+2026-05-28 00:39:13,968 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:39:13,968 - INFO - Database connection closed.
+2026-05-28 00:39:18,031 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:39:18,098 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:39:18,098 - INFO - Executing database query.
+2026-05-28 00:39:18,103 - INFO - Query executed successfully.
+2026-05-28 00:39:18,103 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:39:18,104 - INFO - Database connection closed.
+2026-05-28 00:39:25,091 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:39:25,155 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:39:25,155 - INFO - Executing database query.
+2026-05-28 00:39:25,167 - INFO - Query executed successfully.
+2026-05-28 00:39:25,167 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:39:25,168 - INFO - Database connection closed.
+2026-05-28 00:39:32,662 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:39:32,837 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:39:32,837 - INFO - Executing database query.
+2026-05-28 00:39:32,861 - INFO - Query executed successfully.
+2026-05-28 00:39:32,861 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:39:32,863 - INFO - Transaction committed.
+2026-05-28 00:39:32,863 - INFO - Database connection closed.
+2026-05-28 00:39:39,792 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:39:39,858 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:39:39,858 - INFO - Executing database query.
+2026-05-28 00:39:39,863 - INFO - Query executed successfully.
+2026-05-28 00:39:39,863 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:39:39,863 - INFO - Database connection closed.
+2026-05-28 00:39:44,898 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:39:44,965 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:39:44,965 - INFO - Executing database query.
+2026-05-28 00:39:44,971 - INFO - Query executed successfully.
+2026-05-28 00:39:44,971 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:39:44,971 - INFO - Database connection closed.
+2026-05-28 00:39:55,498 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:39:55,569 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:39:55,569 - INFO - Executing database query.
+2026-05-28 00:39:55,580 - INFO - Query executed successfully.
+2026-05-28 00:39:55,580 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:39:55,582 - INFO - Transaction committed.
+2026-05-28 00:39:55,582 - INFO - Database connection closed.
+2026-05-28 00:39:59,312 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:39:59,390 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:39:59,391 - INFO - Executing database query.
+2026-05-28 00:39:59,395 - INFO - Query executed successfully.
+2026-05-28 00:39:59,395 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:39:59,396 - INFO - Database connection closed.
+2026-05-28 00:40:03,128 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:40:03,198 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:40:03,198 - INFO - Executing database query.
+2026-05-28 00:40:03,218 - INFO - Query executed successfully.
+2026-05-28 00:40:03,218 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:40:03,220 - INFO - Transaction committed.
+2026-05-28 00:40:03,220 - INFO - Database connection closed.
+2026-05-28 00:40:17,526 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:40:17,596 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:40:17,596 - INFO - Executing database query.
+2026-05-28 00:40:17,604 - INFO - Query executed successfully.
+2026-05-28 00:40:17,605 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:40:17,605 - INFO - Database connection closed.
+2026-05-28 00:40:24,951 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:40:25,021 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:40:25,021 - INFO - Executing database query.
+2026-05-28 00:40:25,041 - INFO - Query executed successfully.
+2026-05-28 00:40:25,041 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:40:25,042 - INFO - Database connection closed.
+2026-05-28 00:40:32,510 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:40:32,680 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:40:32,681 - INFO - Executing database query.
+2026-05-28 00:40:32,686 - INFO - Query executed successfully.
+2026-05-28 00:40:32,686 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:40:32,686 - INFO - Database connection closed.
+2026-05-28 00:40:32,686 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:40:32,748 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:40:32,748 - INFO - Executing database query.
+2026-05-28 00:40:32,752 - INFO - Query executed successfully.
+2026-05-28 00:40:32,752 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:40:32,753 - INFO - Database connection closed.
+2026-05-28 00:40:36,964 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:40:37,036 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:40:37,036 - INFO - Executing database query.
+2026-05-28 00:40:37,041 - INFO - Query executed successfully.
+2026-05-28 00:40:37,041 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:40:37,041 - INFO - Database connection closed.
+2026-05-28 00:40:37,041 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:40:37,102 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:40:37,102 - INFO - Executing database query.
+2026-05-28 00:40:37,106 - INFO - Query executed successfully.
+2026-05-28 00:40:37,106 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:40:37,107 - INFO - Database connection closed.
+2026-05-28 00:40:46,091 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:40:46,160 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:40:46,160 - INFO - Executing database query.
+2026-05-28 00:40:46,165 - INFO - Query executed successfully.
+2026-05-28 00:40:46,165 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:40:46,165 - INFO - Database connection closed.
+2026-05-28 00:40:49,483 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:40:49,551 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:40:49,551 - INFO - Executing database query.
+2026-05-28 00:40:49,564 - INFO - Query executed successfully.
+2026-05-28 00:40:49,564 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:40:49,564 - INFO - Database connection closed.
+2026-05-28 00:40:57,987 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:40:58,077 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:40:58,077 - INFO - Executing database query.
+2026-05-28 00:40:58,094 - INFO - Query executed successfully.
+2026-05-28 00:40:58,094 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:40:58,094 - INFO - Database connection closed.
+2026-05-28 00:41:00,481 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:41:00,549 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:41:00,549 - INFO - Executing database query.
+2026-05-28 00:41:00,565 - INFO - Query executed successfully.
+2026-05-28 00:41:00,565 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:41:00,566 - INFO - Database connection closed.
+2026-05-28 00:41:08,970 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:41:09,036 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:41:09,036 - INFO - Executing database query.
+2026-05-28 00:41:09,041 - INFO - Query executed successfully.
+2026-05-28 00:41:09,041 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:41:09,041 - INFO - Database connection closed.
+2026-05-28 00:41:13,121 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:41:13,189 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:41:13,190 - INFO - Executing database query.
+2026-05-28 00:41:13,194 - INFO - Query executed successfully.
+2026-05-28 00:41:13,194 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:41:13,195 - INFO - Database connection closed.
+2026-05-28 00:41:13,195 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:41:13,261 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:41:13,261 - INFO - Executing database query.
+2026-05-28 00:41:13,265 - INFO - Query executed successfully.
+2026-05-28 00:41:13,266 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:41:13,266 - INFO - Database connection closed.
+2026-05-28 00:41:17,403 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:41:17,475 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:41:17,475 - INFO - Executing database query.
+2026-05-28 00:41:17,481 - INFO - Query executed successfully.
+2026-05-28 00:41:17,481 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:41:17,481 - INFO - Database connection closed.
+2026-05-28 00:41:19,236 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:41:19,304 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:41:19,304 - INFO - Executing database query.
+2026-05-28 00:41:19,309 - INFO - Query executed successfully.
+2026-05-28 00:41:19,309 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:41:19,310 - INFO - Database connection closed.
+2026-05-28 00:41:32,610 - WARNING - Input format validation failed: Please use the YYYY-MM-DD format (e.g., 2026-05-20).
+2026-05-28 00:42:05,709 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:42:05,796 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:42:05,796 - INFO - Executing database query.
+2026-05-28 00:42:05,810 - INFO - Query executed successfully.
+2026-05-28 00:42:05,811 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:42:05,814 - INFO - Transaction committed.
+2026-05-28 00:42:05,815 - INFO - Database connection closed.
+2026-05-28 00:42:13,552 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:42:13,626 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:42:13,626 - INFO - Executing database query.
+2026-05-28 00:42:13,631 - INFO - Query executed successfully.
+2026-05-28 00:42:13,631 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:42:13,631 - INFO - Database connection closed.
+2026-05-28 00:42:16,224 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:42:16,300 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:42:16,300 - INFO - Executing database query.
+2026-05-28 00:42:16,308 - INFO - Query executed successfully.
+2026-05-28 00:42:16,308 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:42:16,309 - INFO - Database connection closed.
+2026-05-28 00:42:29,348 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:42:29,537 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:42:29,538 - INFO - Executing database query.
+2026-05-28 00:42:29,544 - INFO - Query executed successfully.
+2026-05-28 00:42:29,544 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:42:29,544 - INFO - Database connection closed.
+2026-05-28 00:42:31,212 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:42:31,292 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:42:31,293 - INFO - Executing database query.
+2026-05-28 00:42:31,297 - INFO - Query executed successfully.
+2026-05-28 00:42:31,298 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:42:31,298 - INFO - Database connection closed.
+2026-05-28 00:42:39,720 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:42:39,801 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:42:39,801 - INFO - Executing database query.
+2026-05-28 00:42:39,807 - INFO - Query executed successfully.
+2026-05-28 00:42:39,808 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:42:39,816 - INFO - Transaction committed.
+2026-05-28 00:42:39,816 - INFO - Database connection closed.
+2026-05-28 00:42:47,703 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:42:47,777 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:42:47,778 - INFO - Executing database query.
+2026-05-28 00:42:47,783 - INFO - Query executed successfully.
+2026-05-28 00:42:47,783 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:42:47,784 - INFO - Database connection closed.
+2026-05-28 00:43:20,334 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:43:20,408 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:43:20,409 - INFO - Executing database query.
+2026-05-28 00:43:20,414 - INFO - Query executed successfully.
+2026-05-28 00:43:20,414 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:43:20,416 - INFO - Transaction committed.
+2026-05-28 00:43:20,416 - INFO - Database connection closed.
+2026-05-28 00:43:31,328 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:43:31,415 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:43:31,415 - INFO - Executing database query.
+2026-05-28 00:43:31,422 - INFO - Query executed successfully.
+2026-05-28 00:43:31,423 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:43:31,423 - INFO - Database connection closed.
+2026-05-28 00:43:39,204 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:43:39,271 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:43:39,272 - INFO - Executing database query.
+2026-05-28 00:43:39,276 - INFO - Query executed successfully.
+2026-05-28 00:43:39,276 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:43:39,277 - INFO - Database connection closed.
+2026-05-28 00:43:39,277 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:43:39,343 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:43:39,344 - INFO - Executing database query.
+2026-05-28 00:43:39,349 - INFO - Query executed successfully.
+2026-05-28 00:43:39,350 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:43:39,350 - INFO - Database connection closed.
+2026-05-28 00:43:42,578 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:43:42,665 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:43:42,665 - INFO - Executing database query.
+2026-05-28 00:43:42,670 - INFO - Query executed successfully.
+2026-05-28 00:43:42,670 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:43:42,670 - INFO - Database connection closed.
+2026-05-28 00:44:01,729 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:44:01,805 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:44:01,806 - INFO - Executing database query.
+2026-05-28 00:44:01,812 - INFO - Query executed successfully.
+2026-05-28 00:44:01,812 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:44:01,812 - INFO - Database connection closed.
+2026-05-28 00:44:03,629 - INFO - Opening PostgreSQL database connection.
+2026-05-28 00:44:03,800 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 00:44:03,801 - INFO - Executing database query.
+2026-05-28 00:44:03,810 - INFO - Query executed successfully.
+2026-05-28 00:44:03,810 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 00:44:03,810 - INFO - Database connection closed.
+2026-05-28 13:11:56,074 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-05-28 13:15:11,526 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-05-28 13:21:27,716 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-05-28 13:24:34,799 - INFO - Opening PostgreSQL database connection.
+2026-05-28 13:24:34,941 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 13:24:34,941 - INFO - Executing database query.
+2026-05-28 13:24:34,974 - INFO - Query executed successfully.
+2026-05-28 13:24:34,975 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 13:24:34,975 - INFO - Database connection closed.
+2026-05-28 13:24:40,703 - INFO - Opening PostgreSQL database connection.
+2026-05-28 13:24:40,744 - INFO - Successfully connected to the PostgreSQL database.
+2026-05-28 13:24:40,745 - INFO - Executing database query.
+2026-05-28 13:24:40,763 - INFO - Query executed successfully.
+2026-05-28 13:24:40,763 - INFO - Data fetched from cursor memory buffer.
+2026-05-28 13:24:40,763 - INFO - Database connection closed.
+2026-05-28 13:25:05,574 - INFO - User canceled input workflow.
