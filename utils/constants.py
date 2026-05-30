@@ -1,7 +1,12 @@
-DOCUMENT_CATEGORIES = {
-    "1": "University",
-    "2": "Career",
-    "3": "Relocation"
+DOCUMENT_TYPES = {
+    "1": "Passport",
+    "2": "Transcript",
+    "3": "Bachelor Degree",
+    "4": "Highschool Certificate",
+    "5": "APS Certificate",
+    "6": "Resume",
+    "7": "Cover Letter",
+    "8": "Language Proof"
 }
 
 
@@ -139,8 +144,13 @@ QUERYABLE_SCHEMA = {
         "title",
         "description",
         "location",
+        "work_mode",
         "job_type",
+        "salary_min",
+        "salary_max",
+        "currency",
         "posted_date",
+        "application_deadline",
         "source_url"
     }
 

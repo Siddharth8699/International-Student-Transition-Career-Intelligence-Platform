@@ -12,10 +12,9 @@ def get_document_type_by_id(document_type_id):
         
 
 
-def create_document_type(name, global_category, description):
+def create_document_type(name, description):
     
     payload = {"name":name,
-               "global_category":global_category,
                "description":description}
     
     new_row = insert_record("document_types", payload)
@@ -26,10 +25,9 @@ def check_document_type_exists(document_type_id):
     return check_entity_exists("document_types", "document_type_id", document_type_id)
            
 
-def update_document_type(document_type_id, name, global_category, description):
+def update_document_type(document_type_id, name, description):
     
     payload = {"name":name,
-               "global_category":global_category,
                "description":description}
     
     updated_row = update_record("document_types","document_type_id",document_type_id,payload)
@@ -38,10 +36,6 @@ def update_document_type(document_type_id, name, global_category, description):
 
 def delete_document_type(document_type_id): 
     return delete_records("document_types", filters={"document_type_id": document_type_id}, single=True)
-
-
-def get_document_types_by_category(global_category):
-    return get_records("document_types", filters={"global_category": global_category})
 
 
 def search_document_types_by_name(keyword):
@@ -55,6 +49,3 @@ def get_document_types_sorted_by_name():
 def get_total_document_types():
     return aggregate_records("document_types","count")
 
-
-def get_document_types_count_by_category():
-    return aggregate_records("document_types", "count", group_by="global_category")

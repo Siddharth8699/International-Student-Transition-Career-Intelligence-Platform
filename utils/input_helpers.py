@@ -33,28 +33,33 @@ def _execute_abstract_input_workflow(prompt, cast_callback, validation_callback 
         return value
     
 
-def choose_document_category():
+def choose_document_type():
 
     while True:
 
         print("""
-        Choose category:
+        Choose document type:
 
-        1. University
-        2. Career
-        3. Relocation
+        1. Passport
+        2. Transcript
+        3. Bachelor Degree
+        4. Highschool Certificate
+        5. APS Certificate
+        6. Resume
+        7. Cover Letter
+        8. Language Proof
         """)
 
         choice = get_integer(
             "Enter choice: "
         )
 
-        category = DOCUMENT_CATEGORIES.get(
+        document_type = DOCUMENT_TYPES.get(
             str(choice)
         )
 
-        if category:
-            return category
+        if document_type:
+            return document_type
 
         print("Invalid choice.")
 

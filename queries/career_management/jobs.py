@@ -54,6 +54,10 @@ def update_job(job_id, title, location, description, work_mode, job_type, salary
     return updated_row
 
 
+def delete_job(job_id):
+    return delete_records("jobs", filters={"job_id": job_id}, single=True)
+
+
 def search_jobs_by_title(keyword):
     return get_records("jobs", search_columns=["title"], search_query=keyword, partial_match=True)
 
@@ -70,7 +74,7 @@ def search_jobs_by_company(keyword):
     where c.name ILIKE %s
     order by c.company_id'''
 
-    params = (f"%{keyword}%")
+    params = (f"%{keyword}%",)
 
     return _execute_query(query, params, "fetchall")
 
@@ -81,9 +85,7 @@ def get_jobs_by_job_type(job_type):
 
 def get_recent_job_listings():
 
-    cutoff_date = (
-        date.today() - timedelta(days=30)
-    )
+    cutoff_date = (date.today() - timedelta(days=30))
 
     query = """
         SELECT
@@ -96,16 +98,14 @@ def get_recent_job_listings():
             j.posted_date
         FROM jobs j
         JOIN companies c
-            ON j.company_id = c.company_id
+        ON j.company_id = c.company_id
         WHERE j.posted_date >= %s
         ORDER BY j.posted_date DESC;
     """
 
-    return _execute_query(
-        query,
-        (cutoff_date,),
-        fetch="all"
-    )
+    params = (cutoff_date,)
+
+    return _execute_query(query, params,"fetchall")
 
 
 
@@ -117,28 +117,17 @@ def get_job_market_summary():
 
             COUNT(*) AS total_jobs,
 
-            COUNT(DISTINCT company_id)
-            AS total_companies_hiring,
+            COUNT(DISTINCT company_id) AS total_companies_hiring,
 
-            COUNT(*) FILTER (
-                WHERE job_type = 'Full-time'
-            ) AS full_time_jobs,
+            COUNT(*) FILTER (WHERE job_type = 'Full-time') AS full_time_jobs,
 
-            COUNT(*) FILTER (
-                WHERE job_type = 'Part-time'
-            ) AS part_time_jobs,
+            COUNT(*) FILTER (WHERE job_type = 'Part-time') AS part_time_jobs,
 
-            COUNT(*) FILTER (
-                WHERE job_type = 'Working Student'
-            ) AS working_student_jobs,
+            COUNT(*) FILTER (WHERE job_type = 'Working Student') AS working_student_jobs,
 
-            COUNT(*) FILTER (
-                WHERE job_type = 'Internship'
-            ) AS internship_jobs,
+            COUNT(*) FILTER (WHERE job_type = 'Internship') AS internship_jobs,
 
-            COUNT(*) FILTER (
-                WHERE job_type = 'Contract'
-            ) AS contract_jobs,
+            COUNT(*) FILTER (WHERE job_type = 'Contract') AS contract_jobs,
 
             (
                 SELECT location
@@ -149,15 +138,22 @@ def get_job_market_summary():
                 LIMIT 1
             ) AS top_hiring_location,
 
-            COUNT(*) FILTER (
-                WHERE posted_date >= CURRENT_DATE - INTERVAL '30 days'
-            ) AS recent_jobs_last_30_days
+            COUNT(*) FILTER (WHERE posted_date >= CURRENT_DATE - INTERVAL '30 days') AS recent_jobs_last_30_days
 
         FROM jobs;
     """
 
-    return _execute_query(
-        query,
-        fetch="one"
-    )
+    result = _execute_query(query)
+
+    return {
+        "total_jobs": result[0],
+        "total_companies_hiring": result[1],
+        "full_time_jobs": result[2],
+        "part_time_jobs": result[3],
+        "working_student_jobs": result[4],
+        "internship_jobs": result[5],
+        "contract_jobs": result[6],
+        "top_hiring_location": result[7],
+        "recent_jobs_last_30_days": result[8],
+        }
 

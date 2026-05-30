@@ -23,18 +23,24 @@ CREATE TABLE users (
 -- ==========================================================
 CREATE TABLE document_types (
     document_type_id SERIAL PRIMARY KEY,
-    name VARCHAR(100) UNIQUE NOT NULL,
-    global_category VARCHAR(50) NOT NULL,
+    
+    -- Strict whitelist using a plain text CHECK constraint
+    name VARCHAR(100) UNIQUE NOT NULL CONSTRAINT check_allowed_document_names CHECK (
+        name IN (
+            'Passport',
+            'Transcript',
+            'Bachelor Degree',
+            'Highschool Certificate',
+            'APS Certificate',
+            'Resume',
+            'Cover Letter',
+            'Language Proof'
+        )
+    ),
+    
     description TEXT,
     created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    updated_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    CONSTRAINT check_document_category CHECK (
-        global_category IN (
-            'University',
-            'Career',
-            'Relocation'
-        )
-    )
+    updated_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 -- ==========================================================

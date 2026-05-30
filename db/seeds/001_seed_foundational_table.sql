@@ -11,10 +11,16 @@ INSERT INTO users (full_name, email, country_of_origin, date_of_birth) VALUES
 ('Carlos Mendez', 'carlos.mendez@example.com', 'Mexico', '2000-03-10');
 
 -- 2. DOCUMENT TYPES (Generates document_type_id: 1, 2, 3)
-INSERT INTO document_types (name, global_category, description) VALUES
-('Biometric Passport', 'Relocation', 'Primary international identity document'),
-('APS Certificate', 'University', 'Academic evaluation center certification for specific regions'),
-('Motivation Letter', 'University', 'Statement of purpose required for university applications');
+INSERT INTO document_types (name, description) VALUES
+('Passport', 'Official passport identification page.'),
+('Transcript', 'Official academic transcript records.'),
+('Bachelor Degree', 'Undergraduate graduation certificate.'),
+('Highschool Certificate', 'Higher secondary education diploma.'),
+('APS Certificate', 'Academic Evaluation Center certificate.'),
+('Resume', 'Professional curriculum vitae.'),
+('Cover Letter', 'Tailored professional application letter.'),
+('Language Proof', 'Official certificate validating language proficiency (IELTS, German, etc.).')
+ON CONFLICT (name) DO NOTHING;
 
 -- 3. EXPENSE CATEGORIES (Generates expense_category_id: 1, 2)
 INSERT INTO expense_categories (name, description) VALUES

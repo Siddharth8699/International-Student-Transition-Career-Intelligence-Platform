@@ -26,3 +26,26 @@ def display_metric(value, metric_name=None, empty_message="No data available."):
         return
 
     print(f"{metric_name}: {value}")
+
+
+
+def display_table(rows, headers):
+
+    if not rows:
+        print("No records found.")
+        return
+
+    print()
+
+    for header in headers:
+        print(f"{header:<25}", end=" ")
+
+    print()
+    print("=" * (len(headers) * 26))
+
+    for row in rows:
+
+        for value in row:
+            print(f"{str(value):<25}", end=" ")
+
+        print()

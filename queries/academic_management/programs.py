@@ -13,25 +13,27 @@ def check_program_exists(program_id):
     return check_entity_exists("programs", "program_id", program_id)
 
 
-def create_program(university_id, name, degree, field_of_study, duration_semesters, tuition_fee):
+def create_program(university_id, name, degree, field_of_study, duration_semesters, tuition_fee,requirement_url):
 
     payload = {"university_id": university_id,
                "name": name,
                "degree": degree,
                "field_of_study": field_of_study,
                "duration_semesters": duration_semesters,
-               "tuition_fee": tuition_fee}
+               "tuition_fee": tuition_fee,
+               "requirement_url": requirement_url}
 
     new_row = insert_record("programs", payload)
     return new_row
 
-def update_program(program_id, name, degree, field_of_study, duration_semesters, tuition_fee):
+def update_program(program_id, name, degree, field_of_study, duration_semesters, tuition_fee,requirement_url):
 
     payload = {"name": name,
                "degree": degree,
                "field_of_study": field_of_study,
                "duration_semesters": duration_semesters,
-               "tuition_fee": tuition_fee}
+               "tuition_fee": tuition_fee,
+               "requirement_url": requirement_url}
     
     updated_row = update_record("programs", "program_id", program_id, payload)
     return updated_row

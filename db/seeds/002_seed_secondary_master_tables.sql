@@ -11,14 +11,14 @@ INSERT INTO user_profiles (user_id, headline, summary, education, experience, pr
 (3, 'Cloud & Backend Engineering Candidate', 'Building cloud and backend capabilities.', 'Bachelor of Software Engineering', NULL, 'Cloud Deployment Sandbox', 'AWS, Python, Security', 'Spanish Native, English B2', 'AWS Certified Cloud Practitioner', 'https://resume.example.com/carlos');
 
 -- 2. UNIVERSITY PROGRAMS (Linked to university_id. Degrees fixed to match strict CHECK constraint)
-INSERT INTO programs (university_id, name, degree, field_of_study, duration_semesters, tuition_fee) VALUES
-(1, 'Computer Science', 'Master', 'Informatics and Data Engineering', 4, 0.00),                       -- program_id = 1
-(1, 'Global Production Engineering', 'Master', 'Engineering Management', 4, 15500.00),               -- program_id = 2
-(2, 'Software Systems Engineering', 'Master', 'Computer Science & Software Architecture', 4, 0.00),   -- program_id = 3
-(2, 'Automotive Engineering', 'Master', 'Mechanical Engineering', 3, 0.00),                           -- program_id = 4
-(3, 'Informatics', 'Master', 'Advanced Computer Science & AI', 4, 0.00),                              -- program_id = 5
-(3, 'Data Engineering and Analytics', 'Master', 'Big Data Technologies', 4, 0.00),                    -- program_id = 6
-(8, 'International Business', 'Bachelor', 'Global Commerce & Management', 6, 6200.00);                -- program_id = 7
+INSERT INTO programs (university_id, name, degree, field_of_study, duration_semesters, tuition_fee, requirement_url) VALUES
+(1, 'Computer Science', 'Master', 'Informatics and Data Engineering', 4, 0.00, 'https://example.com/uni1/cs-requirements'),
+(1, 'Global Production Engineering', 'Master', 'Engineering Management', 4, 15500.00, 'https://example.com/uni1/gpe-requirements'),
+(2, 'Software Systems Engineering', 'Master', 'Computer Science & Software Architecture', 4, 0.00, 'https://example.com/uni2/sse-requirements'),
+(2, 'Automotive Engineering', 'Master', 'Mechanical Engineering', 3, 0.00, 'https://example.com/uni2/auto-requirements'),
+(3, 'Informatics', 'Master', 'Advanced Computer Science & AI', 4, 0.00, 'https://example.com/uni3/informatics-requirements'),
+(3, 'Data Engineering and Analytics', 'Master', 'Big Data Technologies', 4, 0.00, 'https://example.com/uni3/data-requirements'),
+(8, 'International Business', 'Bachelor', 'Global Commerce & Management', 6, 6200.00, 'https://example.com/uni8/ib-requirements');
 
 -- 3. UNIVERSITY INTAKES (Linked cleanly to valid program_id numbers 1 to 7)
 INSERT INTO intakes (program_id, name, start_month, application_deadline) VALUES
@@ -37,5 +37,47 @@ INSERT INTO jobs (company_id, title, description, location, work_mode, job_type,
 (1, 'Automation Systems Intern', 'Full-time internship focused on supporting engineering lifecycle simulations.', 'Erlangen, Germany', 'Onsite', 'Internship', NULL, NULL, 'EUR', '2026-05-22', '2026-06-22', 'https://jobs.siemens.com/vacancies/1145'),
 (2, 'Junior Cloud Developer', 'Full-time role focused on developing and maintaining platform microservices.', 'Walldorf, Germany', 'Hybrid', 'Full-time', 55000.00, 70000.00, 'EUR', '2026-05-18', '2026-06-18', 'https://jobs.sap.com/vacancies/8834'),
 (2, 'Data Analytics Intern', 'Part-time data extraction role helping build enterprise report dashboards.', 'Berlin, Germany', 'Remote', 'Internship', NULL, NULL, 'EUR', '2026-05-24', '2026-06-24', NULL);
+
+--5 user_document_checklist
+INSERT INTO user_documents_checklist (user_id, document_type_id, is_ready) VALUES
+-- ==========================================
+-- USER 1: Fully Ready (Has everything)
+-- ==========================================
+(1, 1, TRUE),  -- Passport
+(1, 2, TRUE),  -- Transcript
+(1, 3, TRUE),  -- Bachelor Degree
+(1, 4, TRUE),  -- Highschool Certificate
+(1, 5, TRUE),  -- APS Certificate
+(1, 6, TRUE),  -- Resume
+(1, 7, TRUE),  -- Cover Letter
+(1, 8, TRUE),  -- Language Proof
+
+-- ==========================================
+-- USER 2: Academic Ready Only (Missing Career pieces)
+-- ==========================================
+(2, 1, TRUE),  -- Passport
+(2, 2, TRUE),  -- Transcript
+(2, 3, TRUE),  -- Bachelor Degree
+(2, 4, TRUE),  -- Highschool Certificate
+(2, 5, TRUE),  -- APS Certificate
+(2, 6, TRUE),  -- Resume
+(2, 7, FALSE), -- Cover Letter (Not ready)
+(2, 8, TRUE),  -- Language Proof
+
+-- ==========================================
+-- USER 3: Just Starting Out (Most things are FALSE)
+-- ==========================================
+(3, 1, TRUE),  -- Passport (They have their ID ready)
+(3, 2, FALSE), -- Transcript
+(3, 3, FALSE), -- Bachelor Degree
+(3, 4, FALSE), -- Highschool Certificate
+(3, 5, FALSE), -- APS Certificate
+(3, 6, TRUE),  -- Resume (They draft a CV)
+(3, 7, FALSE), -- Cover Letter
+(3, 8, FALSE)  -- Language Proof
+
+ON CONFLICT (user_id, document_type_id) DO NOTHING;
+
+
 
 COMMIT;
