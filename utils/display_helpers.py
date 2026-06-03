@@ -38,14 +38,14 @@ def display_table(rows, headers):
     print()
 
     for header in headers:
-        print(f"{header:<25}", end=" ")
+        print(f"{header:<35}", end=" ")
 
     print()
-    print("=" * (len(headers) * 26))
+    print("=" * (len(headers) * 35))
 
     for row in rows:
 
         for value in row:
-            print(f"{str(value):<25}", end=" ")
+            print(f"{str(value):<35}", end=" ")
 
         print()

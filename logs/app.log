@@ -3062,3 +3062,867 @@ TypeError: 'int' object is not iterable
 2026-05-30 12:12:09,622 - INFO - Query executed successfully.
 2026-05-30 12:12:09,622 - INFO - Data fetched from cursor memory buffer.
 2026-05-30 12:12:09,623 - INFO - Database connection closed.
+2026-05-30 14:41:17,299 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-02 22:28:28,836 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-02 22:30:41,309 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-02 22:32:10,849 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-02 22:32:40,237 - INFO - Opening PostgreSQL database connection.
+2026-06-02 22:32:40,424 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-02 22:32:40,425 - INFO - Executing database query.
+2026-06-02 22:32:40,468 - INFO - Query executed successfully.
+2026-06-02 22:32:40,469 - INFO - Data fetched from cursor memory buffer.
+2026-06-02 22:32:40,470 - INFO - Database connection closed.
+2026-06-02 22:32:49,846 - INFO - Opening PostgreSQL database connection.
+2026-06-02 22:32:49,913 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-02 22:32:49,913 - INFO - Executing database query.
+2026-06-02 22:32:49,956 - INFO - Query executed successfully.
+2026-06-02 22:32:49,956 - INFO - Data fetched from cursor memory buffer.
+2026-06-02 22:32:49,956 - INFO - Database connection closed.
+2026-06-02 22:33:01,963 - INFO - Opening PostgreSQL database connection.
+2026-06-02 22:33:02,132 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-02 22:33:02,133 - INFO - Executing database query.
+2026-06-02 22:33:02,161 - INFO - Query executed successfully.
+2026-06-02 22:33:02,162 - INFO - Data fetched from cursor memory buffer.
+2026-06-02 22:33:02,162 - INFO - Database connection closed.
+2026-06-02 22:33:02,162 - ERROR - display_table() missing 1 required positional argument: 'headers'
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 145, in handle_university_applications_menu
+    display_table(rows)
+    ~~~~~~~~~~~~~^^^^^^
+TypeError: display_table() missing 1 required positional argument: 'headers'
+2026-06-02 22:33:56,429 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-02 22:34:00,927 - INFO - Opening PostgreSQL database connection.
+2026-06-02 22:34:01,108 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-02 22:34:01,108 - INFO - Executing database query.
+2026-06-02 22:34:01,132 - INFO - Query executed successfully.
+2026-06-02 22:34:01,132 - INFO - Data fetched from cursor memory buffer.
+2026-06-02 22:34:01,133 - INFO - Database connection closed.
+2026-06-02 22:34:01,133 - ERROR - display_table() missing 1 required positional argument: 'headers'
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 151, in handle_university_applications_menu
+    display_table(rows)
+    ~~~~~~~~~~~~~^^^^^^
+TypeError: display_table() missing 1 required positional argument: 'headers'
+2026-06-02 22:55:11,011 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-02 22:55:17,317 - INFO - Opening PostgreSQL database connection.
+2026-06-02 22:55:17,451 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-02 22:55:17,451 - INFO - Executing database query.
+2026-06-02 22:55:17,482 - INFO - Query executed successfully.
+2026-06-02 22:55:17,483 - INFO - Data fetched from cursor memory buffer.
+2026-06-02 22:55:17,483 - INFO - Database connection closed.
+2026-06-02 23:04:41,188 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-02 23:04:45,955 - INFO - Opening PostgreSQL database connection.
+2026-06-02 23:04:46,044 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-02 23:04:46,044 - INFO - Executing database query.
+2026-06-02 23:04:46,054 - INFO - Query executed successfully.
+2026-06-02 23:04:46,054 - INFO - Data fetched from cursor memory buffer.
+2026-06-02 23:04:46,054 - INFO - Database connection closed.
+2026-06-02 23:12:16,905 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-02 23:12:21,006 - INFO - Opening PostgreSQL database connection.
+2026-06-02 23:12:21,119 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-02 23:12:21,119 - INFO - Executing database query.
+2026-06-02 23:12:21,137 - INFO - Query executed successfully.
+2026-06-02 23:12:21,137 - INFO - Data fetched from cursor memory buffer.
+2026-06-02 23:12:21,137 - INFO - Database connection closed.
+2026-06-02 23:16:56,710 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-02 23:17:02,106 - INFO - Opening PostgreSQL database connection.
+2026-06-02 23:17:02,218 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-02 23:17:02,219 - INFO - Executing database query.
+2026-06-02 23:17:02,234 - INFO - Query executed successfully.
+2026-06-02 23:17:02,234 - INFO - Data fetched from cursor memory buffer.
+2026-06-02 23:17:02,234 - INFO - Database connection closed.
+2026-06-02 23:17:10,852 - INFO - Opening PostgreSQL database connection.
+2026-06-02 23:17:10,938 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-02 23:17:10,939 - INFO - Executing database query.
+2026-06-02 23:17:10,987 - INFO - Query executed successfully.
+2026-06-02 23:17:10,987 - INFO - Data fetched from cursor memory buffer.
+2026-06-02 23:17:10,987 - INFO - Database connection closed.
+2026-06-02 23:40:24,971 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-02 23:40:32,496 - INFO - Opening PostgreSQL database connection.
+2026-06-02 23:40:32,655 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-02 23:40:32,655 - INFO - Executing database query.
+2026-06-02 23:40:32,716 - INFO - Query executed successfully.
+2026-06-02 23:40:32,716 - INFO - Data fetched from cursor memory buffer.
+2026-06-02 23:40:32,716 - INFO - Database connection closed.
+2026-06-02 23:41:32,565 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-02 23:41:36,592 - INFO - Opening PostgreSQL database connection.
+2026-06-02 23:41:36,708 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-02 23:41:36,709 - INFO - Executing database query.
+2026-06-02 23:41:36,733 - INFO - Query executed successfully.
+2026-06-02 23:41:36,733 - INFO - Data fetched from cursor memory buffer.
+2026-06-02 23:41:36,733 - INFO - Database connection closed.
+2026-06-02 23:43:14,069 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-02 23:43:18,596 - INFO - Opening PostgreSQL database connection.
+2026-06-02 23:43:18,702 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-02 23:43:18,702 - INFO - Executing database query.
+2026-06-02 23:43:18,736 - INFO - Query executed successfully.
+2026-06-02 23:43:18,736 - INFO - Data fetched from cursor memory buffer.
+2026-06-02 23:43:18,736 - INFO - Database connection closed.
+2026-06-02 23:43:18,737 - ERROR - display_table() missing 1 required positional argument: 'headers'
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 152, in handle_university_applications_menu
+    display_table(rows)
+    ~~~~~~~~~~~~~^^^^^^
+TypeError: display_table() missing 1 required positional argument: 'headers'
+2026-06-02 23:44:03,128 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-02 23:44:09,075 - INFO - Opening PostgreSQL database connection.
+2026-06-02 23:44:09,185 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-02 23:44:09,186 - INFO - Executing database query.
+2026-06-02 23:44:09,206 - INFO - Query executed successfully.
+2026-06-02 23:44:09,207 - INFO - Data fetched from cursor memory buffer.
+2026-06-02 23:44:09,207 - INFO - Database connection closed.
+2026-06-02 23:44:09,208 - ERROR - display_table() missing 1 required positional argument: 'headers'
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 153, in handle_university_applications_menu
+    display_table(rows)
+    ~~~~~~~~~~~~~^^^^^^
+TypeError: display_table() missing 1 required positional argument: 'headers'
+2026-06-02 23:47:23,783 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-02 23:47:27,763 - INFO - Opening PostgreSQL database connection.
+2026-06-02 23:47:27,875 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-02 23:47:27,875 - INFO - Executing database query.
+2026-06-02 23:47:27,898 - INFO - Query executed successfully.
+2026-06-02 23:47:27,898 - INFO - Data fetched from cursor memory buffer.
+2026-06-02 23:47:27,898 - INFO - Database connection closed.
+2026-06-02 23:55:00,490 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-02 23:55:03,445 - INFO - Opening PostgreSQL database connection.
+2026-06-02 23:55:03,559 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-02 23:55:03,559 - INFO - Executing database query.
+2026-06-02 23:55:03,584 - INFO - Query executed successfully.
+2026-06-02 23:55:03,584 - INFO - Data fetched from cursor memory buffer.
+2026-06-02 23:55:03,584 - INFO - Database connection closed.
+2026-06-03 00:00:17,229 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 00:00:20,960 - INFO - Opening PostgreSQL database connection.
+2026-06-03 00:00:21,070 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 00:00:21,070 - INFO - Executing database query.
+2026-06-03 00:00:21,102 - INFO - Query executed successfully.
+2026-06-03 00:00:21,102 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 00:00:21,102 - INFO - Database connection closed.
+2026-06-03 00:00:43,839 - INFO - Opening PostgreSQL database connection.
+2026-06-03 00:00:43,929 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 00:00:43,930 - INFO - Executing database query.
+2026-06-03 00:00:43,947 - INFO - Query executed successfully.
+2026-06-03 00:00:43,947 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 00:00:43,947 - INFO - Database connection closed.
+2026-06-03 00:00:59,751 - INFO - Opening PostgreSQL database connection.
+2026-06-03 00:00:59,939 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 00:00:59,939 - INFO - Executing database query.
+2026-06-03 00:00:59,959 - INFO - Query executed successfully.
+2026-06-03 00:00:59,960 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 00:00:59,961 - INFO - Database connection closed.
+2026-06-03 00:01:13,365 - INFO - Opening PostgreSQL database connection.
+2026-06-03 00:01:13,462 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 00:01:13,462 - INFO - Executing database query.
+2026-06-03 00:01:13,484 - INFO - Query executed successfully.
+2026-06-03 00:01:13,484 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 00:01:13,484 - INFO - Database connection closed.
+2026-06-03 00:11:15,157 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 00:11:28,505 - INFO - Opening PostgreSQL database connection.
+2026-06-03 00:11:28,556 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 00:11:28,557 - INFO - Executing database query.
+2026-06-03 00:11:28,562 - INFO - Query executed successfully.
+2026-06-03 00:11:28,563 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 00:11:28,563 - INFO - Database connection closed.
+2026-06-03 13:44:13,264 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 13:44:18,556 - ERROR - Unsupported table
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 82, in handle_application_statuses
+    rows = get_all_application_status()
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\application_management\application_statuses.py", line 5, in get_all_application_status
+    return get_records("application_statuses")
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\generic_queries.py", line 24, in get_records
+    validate_schema(table_name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\utils\validation_helpers.py", line 8, in validate_schema
+    raise ValueError("Unsupported table")
+ValueError: Unsupported table
+2026-06-03 13:45:02,853 - INFO - Opening PostgreSQL database connection.
+2026-06-03 13:45:02,988 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 13:45:02,988 - INFO - Executing database query.
+2026-06-03 13:45:03,029 - INFO - Query executed successfully.
+2026-06-03 13:45:03,029 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 13:45:03,029 - INFO - Database connection closed.
+2026-06-03 13:45:03,029 - ERROR - Unsupported table
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 91, in handle_application_statuses
+    row = create_application_status(name)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\application_management\application_statuses.py", line 12, in create_application_status
+    new_row = insert_record("application_statuses", payload)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\generic_queries.py", line 87, in insert_record
+    validate_schema(table_name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\utils\validation_helpers.py", line 8, in validate_schema
+    raise ValueError("Unsupported table")
+ValueError: Unsupported table
+2026-06-03 13:46:35,277 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 13:46:38,228 - ERROR - Unsupported table
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 82, in handle_application_statuses
+    rows = get_all_application_status()
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\application_management\application_statuses.py", line 5, in get_all_application_status
+    return get_records("application_statuses")
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\generic_queries.py", line 24, in get_records
+    validate_schema(table_name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\utils\validation_helpers.py", line 8, in validate_schema
+    raise ValueError("Unsupported table")
+ValueError: Unsupported table
+2026-06-03 14:26:07,736 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 14:26:11,607 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:26:11,744 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:26:11,744 - INFO - Executing database query.
+2026-06-03 14:26:11,786 - INFO - Query executed successfully.
+2026-06-03 14:26:11,787 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:26:11,787 - INFO - Database connection closed.
+2026-06-03 14:26:21,411 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:26:21,475 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:26:21,476 - INFO - Executing database query.
+2026-06-03 14:26:21,488 - INFO - Query executed successfully.
+2026-06-03 14:26:21,488 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:26:21,489 - INFO - Database connection closed.
+2026-06-03 14:26:21,489 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:26:21,551 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:26:21,551 - INFO - Executing database query.
+2026-06-03 14:26:21,584 - ERROR - Transaction rolled back. Error: duplicate key value violates unique constraint "application_statuses_pkey"
+DETAIL:  Key (application_status_id)=(1) already exists.
+
+2026-06-03 14:26:21,584 - INFO - Database connection closed.
+2026-06-03 14:26:21,585 - ERROR - Write failure encountered on table 'application_statuses'.
+2026-06-03 14:26:21,585 - ERROR - Database Execution Failure: Could not write record into 'application_statuses'.
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 91, in handle_application_statuses
+    row = create_application_status(name)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\application_management\application_statuses.py", line 12, in create_application_status
+    new_row = insert_record("application_statuses", payload)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\generic_queries.py", line 108, in insert_record
+    raise RuntimeError(f"Database Execution Failure: Could not write record into '{table_name}'.")
+RuntimeError: Database Execution Failure: Could not write record into 'application_statuses'.
+2026-06-03 14:29:11,335 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 14:29:20,742 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:29:20,837 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:29:20,837 - INFO - Executing database query.
+2026-06-03 14:29:20,844 - INFO - Query executed successfully.
+2026-06-03 14:29:20,844 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:29:20,844 - INFO - Database connection closed.
+2026-06-03 14:29:20,844 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:29:20,908 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:29:20,908 - INFO - Executing database query.
+2026-06-03 14:29:20,915 - INFO - Query executed successfully.
+2026-06-03 14:29:20,915 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:29:20,917 - INFO - Transaction committed.
+2026-06-03 14:29:20,917 - INFO - Database connection closed.
+2026-06-03 14:29:20,919 - ERROR - 'int' object is not iterable
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 92, in handle_application_statuses
+    display_table(row, headers=['application_status_id','status_name'])
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\utils\display_helpers.py", line 48, in display_table
+    for value in row:
+                 ^^^
+TypeError: 'int' object is not iterable
+2026-06-03 14:34:18,396 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 14:34:27,155 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:34:27,244 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:34:27,245 - INFO - Executing database query.
+2026-06-03 14:34:27,250 - INFO - Query executed successfully.
+2026-06-03 14:34:27,250 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:34:27,250 - INFO - Database connection closed.
+2026-06-03 14:34:48,856 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:34:48,934 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:34:48,934 - INFO - Executing database query.
+2026-06-03 14:34:48,938 - INFO - Query executed successfully.
+2026-06-03 14:34:48,939 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:34:48,939 - INFO - Database connection closed.
+2026-06-03 14:34:48,939 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:34:49,012 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:34:49,012 - INFO - Executing database query.
+2026-06-03 14:34:49,017 - INFO - Query executed successfully.
+2026-06-03 14:34:49,017 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:34:49,019 - INFO - Transaction committed.
+2026-06-03 14:34:49,019 - INFO - Database connection closed.
+2026-06-03 14:34:58,395 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:34:58,589 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:34:58,589 - INFO - Executing database query.
+2026-06-03 14:34:58,596 - INFO - Query executed successfully.
+2026-06-03 14:34:58,596 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:34:58,597 - INFO - Database connection closed.
+2026-06-03 14:35:08,689 - WARNING - Input format validation failed: Input must be only letters and space.
+2026-06-03 14:35:47,628 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 14:35:57,492 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:35:57,583 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:35:57,583 - INFO - Executing database query.
+2026-06-03 14:35:57,590 - INFO - Query executed successfully.
+2026-06-03 14:35:57,590 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:35:57,591 - INFO - Database connection closed.
+2026-06-03 14:36:05,808 - WARNING - Input format validation failed: Input must be only letters and space.
+2026-06-03 14:37:05,363 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 14:37:11,711 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:37:11,792 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:37:11,792 - INFO - Executing database query.
+2026-06-03 14:37:11,796 - INFO - Query executed successfully.
+2026-06-03 14:37:11,797 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:37:11,797 - INFO - Database connection closed.
+2026-06-03 14:37:19,975 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:37:20,046 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:37:20,046 - INFO - Executing database query.
+2026-06-03 14:37:20,051 - INFO - Query executed successfully.
+2026-06-03 14:37:20,051 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:37:20,052 - INFO - Database connection closed.
+2026-06-03 14:37:20,052 - ERROR - Unsupported column
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 106, in handle_application_statuses
+    row = update_application_status(application_status_id, name)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\application_management\application_statuses.py", line 34, in update_application_status
+    updated_row = update_record("application_statuses","application_status_id",application_status_id,payload)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\generic_queries.py", line 127, in update_record
+    validate_schema(table_name, column_name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\utils\validation_helpers.py", line 12, in validate_schema
+    raise ValueError("Unsupported column")
+ValueError: Unsupported column
+2026-06-03 14:38:22,536 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 14:39:16,165 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:39:16,250 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:39:16,250 - INFO - Executing database query.
+2026-06-03 14:39:16,258 - INFO - Query executed successfully.
+2026-06-03 14:39:16,259 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:39:16,259 - INFO - Database connection closed.
+2026-06-03 14:39:23,090 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:39:23,164 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:39:23,164 - INFO - Executing database query.
+2026-06-03 14:39:23,168 - INFO - Query executed successfully.
+2026-06-03 14:39:23,169 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:39:23,169 - INFO - Database connection closed.
+2026-06-03 14:39:23,169 - ERROR - Unsupported column
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 106, in handle_application_statuses
+    row = update_application_status(application_status_id, name)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\application_management\application_statuses.py", line 34, in update_application_status
+    updated_row = update_record("application_statuses","application_status_id",application_status_id,payload)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\generic_queries.py", line 127, in update_record
+    validate_schema(table_name, column_name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\utils\validation_helpers.py", line 12, in validate_schema
+    raise ValueError("Unsupported column")
+ValueError: Unsupported column
+2026-06-03 14:39:57,003 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:39:57,073 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:39:57,073 - INFO - Executing database query.
+2026-06-03 14:39:57,079 - INFO - Query executed successfully.
+2026-06-03 14:39:57,079 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:39:57,079 - INFO - Database connection closed.
+2026-06-03 14:40:01,370 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:40:01,447 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:40:01,447 - INFO - Executing database query.
+2026-06-03 14:40:01,452 - INFO - Query executed successfully.
+2026-06-03 14:40:01,452 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:40:01,453 - INFO - Database connection closed.
+2026-06-03 14:40:01,453 - ERROR - Unsupported column
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 106, in handle_application_statuses
+    row = update_application_status(application_status_id, name)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\application_management\application_statuses.py", line 34, in update_application_status
+    updated_row = update_record("application_statuses","application_status_id",application_status_id,payload)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\generic_queries.py", line 127, in update_record
+    validate_schema(table_name, column_name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\utils\validation_helpers.py", line 12, in validate_schema
+    raise ValueError("Unsupported column")
+ValueError: Unsupported column
+2026-06-03 14:40:32,431 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:40:32,506 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:40:32,506 - INFO - Executing database query.
+2026-06-03 14:40:32,511 - INFO - Query executed successfully.
+2026-06-03 14:40:32,512 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:40:32,512 - INFO - Database connection closed.
+2026-06-03 14:51:16,037 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 14:51:30,747 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:51:30,820 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:51:30,820 - INFO - Executing database query.
+2026-06-03 14:51:30,826 - INFO - Query executed successfully.
+2026-06-03 14:51:30,826 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:51:30,826 - INFO - Database connection closed.
+2026-06-03 14:51:35,646 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:51:35,698 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:51:35,698 - INFO - Executing database query.
+2026-06-03 14:51:35,713 - INFO - Query executed successfully.
+2026-06-03 14:51:35,713 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:51:35,714 - INFO - Database connection closed.
+2026-06-03 14:51:35,714 - ERROR - Unsupported column
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 106, in handle_application_statuses
+    row = update_application_status(application_status_id, name)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\application_management\application_statuses.py", line 34, in update_application_status
+    updated_row = update_record("application_statuses","application_status_id",application_status_id,payload)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\generic_queries.py", line 127, in update_record
+    validate_schema(table_name, column_name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\utils\validation_helpers.py", line 12, in validate_schema
+    raise ValueError("Unsupported column")
+ValueError: Unsupported column
+2026-06-03 14:53:58,257 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 14:54:05,223 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:54:05,309 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:54:05,309 - INFO - Executing database query.
+2026-06-03 14:54:05,315 - INFO - Query executed successfully.
+2026-06-03 14:54:05,316 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:54:05,316 - INFO - Database connection closed.
+2026-06-03 14:54:06,866 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:54:07,037 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:54:07,037 - INFO - Executing database query.
+2026-06-03 14:54:07,043 - INFO - Query executed successfully.
+2026-06-03 14:54:07,043 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:54:07,044 - INFO - Database connection closed.
+2026-06-03 14:54:07,044 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:54:07,106 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:54:07,106 - INFO - Executing database query.
+2026-06-03 14:54:07,127 - INFO - Query executed successfully.
+2026-06-03 14:54:07,127 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:54:07,130 - INFO - Transaction committed.
+2026-06-03 14:54:07,130 - INFO - Database connection closed.
+2026-06-03 14:54:19,324 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:54:19,399 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:54:19,399 - INFO - Executing database query.
+2026-06-03 14:54:19,404 - INFO - Query executed successfully.
+2026-06-03 14:54:19,404 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:54:19,404 - INFO - Database connection closed.
+2026-06-03 14:54:21,073 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:54:21,149 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:54:21,149 - INFO - Executing database query.
+2026-06-03 14:54:21,175 - INFO - Query executed successfully.
+2026-06-03 14:54:21,176 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:54:21,177 - INFO - Transaction committed.
+2026-06-03 14:54:21,177 - INFO - Database connection closed.
+2026-06-03 14:54:21,178 - ERROR - 'int' object is not iterable
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 121, in handle_application_statuses
+    display_table(row, headers=['application_status_id','status_name'])
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\utils\display_helpers.py", line 48, in display_table
+    for value in row:
+                 ^^^
+TypeError: 'int' object is not iterable
+2026-06-03 14:57:28,850 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 14:57:32,899 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:57:32,990 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:57:32,990 - INFO - Executing database query.
+2026-06-03 14:57:32,997 - INFO - Query executed successfully.
+2026-06-03 14:57:32,997 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:57:32,998 - INFO - Database connection closed.
+2026-06-03 14:57:34,355 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:57:34,427 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:57:34,427 - INFO - Executing database query.
+2026-06-03 14:57:34,442 - INFO - Query executed successfully.
+2026-06-03 14:57:34,442 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:57:34,451 - INFO - Transaction committed.
+2026-06-03 14:57:34,451 - INFO - Database connection closed.
+2026-06-03 14:57:48,572 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:57:48,737 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:57:48,737 - INFO - Executing database query.
+2026-06-03 14:57:48,748 - INFO - Query executed successfully.
+2026-06-03 14:57:48,749 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:57:48,749 - INFO - Database connection closed.
+2026-06-03 14:58:00,399 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:58:00,469 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:58:00,469 - INFO - Executing database query.
+2026-06-03 14:58:00,475 - INFO - Query executed successfully.
+2026-06-03 14:58:00,476 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:58:00,476 - INFO - Database connection closed.
+2026-06-03 14:58:00,476 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:58:00,538 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:58:00,539 - INFO - Executing database query.
+2026-06-03 14:58:00,550 - INFO - Query executed successfully.
+2026-06-03 14:58:00,550 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:58:00,552 - INFO - Transaction committed.
+2026-06-03 14:58:00,552 - INFO - Database connection closed.
+2026-06-03 14:58:14,937 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:58:15,112 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:58:15,113 - INFO - Executing database query.
+2026-06-03 14:58:15,117 - INFO - Query executed successfully.
+2026-06-03 14:58:15,117 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:58:15,117 - INFO - Database connection closed.
+2026-06-03 14:58:16,352 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:58:16,421 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:58:16,422 - INFO - Executing database query.
+2026-06-03 14:58:16,426 - INFO - Query executed successfully.
+2026-06-03 14:58:16,426 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:58:16,426 - INFO - Database connection closed.
+2026-06-03 14:58:16,427 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:58:16,500 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:58:16,500 - INFO - Executing database query.
+2026-06-03 14:58:16,505 - INFO - Query executed successfully.
+2026-06-03 14:58:16,505 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:58:16,507 - INFO - Transaction committed.
+2026-06-03 14:58:16,508 - INFO - Database connection closed.
+2026-06-03 14:58:20,941 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:58:21,118 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:58:21,119 - INFO - Executing database query.
+2026-06-03 14:58:21,124 - INFO - Query executed successfully.
+2026-06-03 14:58:21,124 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:58:21,124 - INFO - Database connection closed.
+2026-06-03 14:58:22,824 - INFO - Opening PostgreSQL database connection.
+2026-06-03 14:58:22,891 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 14:58:22,891 - INFO - Executing database query.
+2026-06-03 14:58:22,904 - INFO - Query executed successfully.
+2026-06-03 14:58:22,905 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 14:58:22,914 - INFO - Transaction committed.
+2026-06-03 14:58:22,915 - INFO - Database connection closed.
+2026-06-03 15:00:23,513 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 15:00:27,098 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:00:27,192 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:00:27,193 - INFO - Executing database query.
+2026-06-03 15:00:27,197 - INFO - Query executed successfully.
+2026-06-03 15:00:27,197 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:00:27,198 - INFO - Database connection closed.
+2026-06-03 15:00:27,198 - ERROR - unsupported format string passed to list.__format__
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 83, in handle_application_statuses
+    display_table(rows, headers=['application_status_id',['status_name']])
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\utils\display_helpers.py", line 41, in display_table
+    print(f"{header:<35}", end=" ")
+            ^^^^^^^^^^^^
+TypeError: unsupported format string passed to list.__format__
+2026-06-03 15:00:52,717 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 15:00:56,645 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:00:56,860 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:00:56,860 - INFO - Executing database query.
+2026-06-03 15:00:56,868 - INFO - Query executed successfully.
+2026-06-03 15:00:56,868 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:00:56,868 - INFO - Database connection closed.
+2026-06-03 15:01:23,360 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 15:01:31,085 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:01:31,286 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:01:31,286 - INFO - Executing database query.
+2026-06-03 15:01:31,297 - INFO - Query executed successfully.
+2026-06-03 15:01:31,297 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:01:31,297 - INFO - Database connection closed.
+2026-06-03 15:01:31,298 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:01:31,464 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:01:31,465 - INFO - Executing database query.
+2026-06-03 15:01:31,489 - INFO - Query executed successfully.
+2026-06-03 15:01:31,489 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:01:31,491 - INFO - Transaction committed.
+2026-06-03 15:01:31,491 - INFO - Database connection closed.
+2026-06-03 15:01:31,492 - ERROR - 'int' object is not iterable
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 92, in handle_application_statuses
+    display_table(row, headers=['application_status_id','status_name'])
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\utils\display_helpers.py", line 48, in display_table
+    for value in row:
+                 ^^^
+TypeError: 'int' object is not iterable
+2026-06-03 15:02:00,697 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 15:02:08,043 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:02:08,122 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:02:08,123 - INFO - Executing database query.
+2026-06-03 15:02:08,129 - INFO - Query executed successfully.
+2026-06-03 15:02:08,129 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:02:08,129 - INFO - Database connection closed.
+2026-06-03 15:02:08,130 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:02:08,200 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:02:08,201 - INFO - Executing database query.
+2026-06-03 15:02:08,205 - INFO - Query executed successfully.
+2026-06-03 15:02:08,205 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:02:08,207 - INFO - Transaction committed.
+2026-06-03 15:02:08,207 - INFO - Database connection closed.
+2026-06-03 15:02:41,025 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 15:02:47,022 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:02:47,128 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:02:47,128 - INFO - Executing database query.
+2026-06-03 15:02:47,134 - INFO - Query executed successfully.
+2026-06-03 15:02:47,134 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:02:47,134 - INFO - Database connection closed.
+2026-06-03 15:02:53,912 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:02:53,983 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:02:53,984 - INFO - Executing database query.
+2026-06-03 15:02:53,991 - INFO - Query executed successfully.
+2026-06-03 15:02:53,991 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:02:53,991 - INFO - Database connection closed.
+2026-06-03 15:02:55,846 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:02:55,915 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:02:55,915 - INFO - Executing database query.
+2026-06-03 15:02:55,920 - INFO - Query executed successfully.
+2026-06-03 15:02:55,920 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:02:55,921 - INFO - Database connection closed.
+2026-06-03 15:02:55,921 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:02:55,991 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:02:55,992 - INFO - Executing database query.
+2026-06-03 15:02:56,007 - INFO - Query executed successfully.
+2026-06-03 15:02:56,008 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:02:56,009 - INFO - Transaction committed.
+2026-06-03 15:02:56,010 - INFO - Database connection closed.
+2026-06-03 15:03:04,228 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:03:04,303 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:03:04,303 - INFO - Executing database query.
+2026-06-03 15:03:04,308 - INFO - Query executed successfully.
+2026-06-03 15:03:04,308 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:03:04,308 - INFO - Database connection closed.
+2026-06-03 15:03:05,760 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:03:05,826 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:03:05,826 - INFO - Executing database query.
+2026-06-03 15:03:05,852 - INFO - Query executed successfully.
+2026-06-03 15:03:05,853 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:03:05,854 - INFO - Transaction committed.
+2026-06-03 15:03:05,855 - INFO - Database connection closed.
+2026-06-03 15:03:10,047 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:03:10,114 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:03:10,114 - INFO - Executing database query.
+2026-06-03 15:03:10,118 - INFO - Query executed successfully.
+2026-06-03 15:03:10,119 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:03:10,119 - INFO - Database connection closed.
+2026-06-03 15:03:11,028 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:03:11,097 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:03:11,097 - INFO - Executing database query.
+2026-06-03 15:03:11,110 - INFO - Query executed successfully.
+2026-06-03 15:03:11,111 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:03:11,113 - INFO - Transaction committed.
+2026-06-03 15:03:11,113 - INFO - Database connection closed.
+2026-06-03 15:04:15,509 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 15:04:31,354 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:04:31,442 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:04:31,442 - INFO - Executing database query.
+2026-06-03 15:04:31,454 - INFO - Query executed successfully.
+2026-06-03 15:04:31,454 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:04:31,454 - INFO - Database connection closed.
+2026-06-03 15:04:33,431 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:04:33,502 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:04:33,502 - INFO - Executing database query.
+2026-06-03 15:04:33,510 - INFO - Query executed successfully.
+2026-06-03 15:04:33,511 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:04:33,511 - INFO - Database connection closed.
+2026-06-03 15:04:33,511 - ERROR - check_application_status_exist() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 186, in handle_university_applications_menu
+    if not check_application_status_exist(user_id, intake_id):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+TypeError: check_application_status_exist() takes 1 positional argument but 2 were given
+2026-06-03 15:07:16,781 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 15:07:21,543 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:07:21,626 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:07:21,626 - INFO - Executing database query.
+2026-06-03 15:07:21,632 - INFO - Query executed successfully.
+2026-06-03 15:07:21,632 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:07:21,633 - INFO - Database connection closed.
+2026-06-03 15:07:22,722 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:07:22,805 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:07:22,805 - INFO - Executing database query.
+2026-06-03 15:07:22,810 - INFO - Query executed successfully.
+2026-06-03 15:07:22,810 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:07:22,810 - INFO - Database connection closed.
+2026-06-03 15:07:22,811 - ERROR - check_application_status_exist() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 186, in handle_university_applications_menu
+    if not check_application_status_exist(user_id, intake_id):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+TypeError: check_application_status_exist() takes 1 positional argument but 2 were given
+2026-06-03 15:37:21,291 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 15:37:50,943 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:37:51,092 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:37:51,092 - INFO - Executing database query.
+2026-06-03 15:37:51,105 - INFO - Query executed successfully.
+2026-06-03 15:37:51,105 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:37:51,106 - INFO - Database connection closed.
+2026-06-03 15:37:53,727 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:37:53,831 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:37:53,831 - INFO - Executing database query.
+2026-06-03 15:37:53,839 - INFO - Query executed successfully.
+2026-06-03 15:37:53,839 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:37:53,840 - INFO - Database connection closed.
+2026-06-03 15:38:04,345 - WARNING - Input format validation failed: Please enter a valid number
+2026-06-03 15:38:07,346 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:38:07,429 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:38:07,429 - INFO - Executing database query.
+2026-06-03 15:38:07,446 - INFO - Query executed successfully.
+2026-06-03 15:38:07,446 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:38:07,446 - INFO - Database connection closed.
+2026-06-03 15:38:07,447 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:38:07,529 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:38:07,529 - INFO - Executing database query.
+2026-06-03 15:38:07,535 - INFO - Query executed successfully.
+2026-06-03 15:38:07,536 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:38:07,536 - INFO - Database connection closed.
+2026-06-03 15:39:05,594 - WARNING - Input format validation failed: Feild cannot be empty.
+2026-06-03 15:39:17,778 - ERROR - Unsupported column
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 196, in handle_university_applications_menu
+    row = create_university_application(user_id, intake_id, status_id, token, target_year, application_platform, platform_url, notes, applied_date)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\application_management\university_application.py", line 54, in create_university_application
+    new_row = insert_record("university_applications", payload)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\generic_queries.py", line 94, in insert_record
+    validate_schema(table_name, column_name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\utils\validation_helpers.py", line 12, in validate_schema
+    raise ValueError("Unsupported column")
+ValueError: Unsupported column
+2026-06-03 15:43:29,487 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 15:43:37,494 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:43:37,601 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:43:37,601 - INFO - Executing database query.
+2026-06-03 15:43:37,609 - INFO - Query executed successfully.
+2026-06-03 15:43:37,610 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:43:37,610 - INFO - Database connection closed.
+2026-06-03 15:43:38,698 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:43:38,785 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:43:38,785 - INFO - Executing database query.
+2026-06-03 15:43:38,793 - INFO - Query executed successfully.
+2026-06-03 15:43:38,793 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:43:38,793 - INFO - Database connection closed.
+2026-06-03 15:43:40,793 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:43:40,879 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:43:40,879 - INFO - Executing database query.
+2026-06-03 15:43:40,885 - INFO - Query executed successfully.
+2026-06-03 15:43:40,885 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:43:40,885 - INFO - Database connection closed.
+2026-06-03 15:43:40,885 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:43:40,966 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:43:40,967 - INFO - Executing database query.
+2026-06-03 15:43:40,972 - INFO - Query executed successfully.
+2026-06-03 15:43:40,972 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:43:40,973 - INFO - Database connection closed.
+2026-06-03 15:44:08,714 - ERROR - Unsupported column
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 196, in handle_university_applications_menu
+    row = create_university_application(user_id, intake_id, status_id, application_guidance_token, target_year, application_platform, platform_url, notes, applied_date)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\application_management\university_application.py", line 54, in create_university_application
+    new_row = insert_record("university_applications", payload)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\queries\generic_queries.py", line 94, in insert_record
+    validate_schema(table_name, column_name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\utils\validation_helpers.py", line 12, in validate_schema
+    raise ValueError("Unsupported column")
+ValueError: Unsupported column
+2026-06-03 15:49:22,466 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 15:49:28,366 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:49:28,569 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:49:28,569 - INFO - Executing database query.
+2026-06-03 15:49:28,576 - INFO - Query executed successfully.
+2026-06-03 15:49:28,576 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:49:28,576 - INFO - Database connection closed.
+2026-06-03 15:49:29,457 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:49:29,629 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:49:29,630 - INFO - Executing database query.
+2026-06-03 15:49:29,639 - INFO - Query executed successfully.
+2026-06-03 15:49:29,639 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:49:29,640 - INFO - Database connection closed.
+2026-06-03 15:49:31,021 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:49:31,122 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:49:31,123 - INFO - Executing database query.
+2026-06-03 15:49:31,128 - INFO - Query executed successfully.
+2026-06-03 15:49:31,128 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:49:31,129 - INFO - Database connection closed.
+2026-06-03 15:49:31,129 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:49:31,326 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:49:31,326 - INFO - Executing database query.
+2026-06-03 15:49:31,332 - INFO - Query executed successfully.
+2026-06-03 15:49:31,332 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:49:31,332 - INFO - Database connection closed.
+2026-06-03 15:49:59,662 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:49:59,750 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:49:59,751 - INFO - Executing database query.
+2026-06-03 15:50:00,331 - INFO - Query executed successfully.
+2026-06-03 15:50:00,331 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:50:00,333 - INFO - Transaction committed.
+2026-06-03 15:50:00,334 - INFO - Database connection closed.
+2026-06-03 15:50:11,653 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:50:11,748 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:50:11,749 - INFO - Executing database query.
+2026-06-03 15:50:11,756 - INFO - Query executed successfully.
+2026-06-03 15:50:11,756 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:50:11,757 - INFO - Database connection closed.
+2026-06-03 15:51:25,336 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 15:51:37,682 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:51:37,795 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:51:37,796 - INFO - Executing database query.
+2026-06-03 15:51:37,802 - INFO - Query executed successfully.
+2026-06-03 15:51:37,802 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:51:37,802 - INFO - Database connection closed.
+2026-06-03 15:51:41,941 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:51:42,030 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:51:42,030 - INFO - Executing database query.
+2026-06-03 15:51:42,074 - INFO - Query executed successfully.
+2026-06-03 15:51:42,074 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:51:42,074 - INFO - Database connection closed.
+2026-06-03 15:52:16,320 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:52:16,506 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:52:16,507 - INFO - Executing database query.
+2026-06-03 15:52:16,512 - INFO - Query executed successfully.
+2026-06-03 15:52:16,512 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:52:16,513 - INFO - Database connection closed.
+2026-06-03 15:52:20,908 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:52:21,002 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:52:21,003 - INFO - Executing database query.
+2026-06-03 15:52:21,008 - INFO - Query executed successfully.
+2026-06-03 15:52:21,009 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:52:21,009 - INFO - Database connection closed.
+2026-06-03 15:52:23,120 - WARNING - Input format validation failed: Please enter a valid number
+2026-06-03 15:54:32,963 - WARNING - Input format validation failed: Feild cannot be empty.
+2026-06-03 15:54:43,017 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:54:43,106 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:54:43,106 - INFO - Executing database query.
+2026-06-03 15:54:43,147 - INFO - Query executed successfully.
+2026-06-03 15:54:43,147 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:54:43,149 - INFO - Transaction committed.
+2026-06-03 15:54:43,150 - INFO - Database connection closed.
+2026-06-03 15:57:40,787 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:57:40,914 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:57:40,914 - INFO - Executing database query.
+2026-06-03 15:57:40,922 - INFO - Query executed successfully.
+2026-06-03 15:57:40,923 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:57:40,923 - INFO - Database connection closed.
+2026-06-03 15:57:40,923 - INFO - Opening PostgreSQL database connection.
+2026-06-03 15:57:41,002 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 15:57:41,002 - INFO - Executing database query.
+2026-06-03 15:57:41,012 - INFO - Query executed successfully.
+2026-06-03 15:57:41,012 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 15:57:41,014 - INFO - Transaction committed.
+2026-06-03 15:57:41,015 - INFO - Database connection closed.
+2026-06-03 15:59:56,252 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 16:00:00,103 - INFO - Opening PostgreSQL database connection.
+2026-06-03 16:00:00,223 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 16:00:00,224 - INFO - Executing database query.
+2026-06-03 16:00:00,248 - INFO - Query executed successfully.
+2026-06-03 16:00:00,249 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 16:00:00,250 - INFO - Database connection closed.
+2026-06-03 16:00:08,499 - INFO - Opening PostgreSQL database connection.
+2026-06-03 16:00:08,585 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 16:00:08,586 - INFO - Executing database query.
+2026-06-03 16:00:08,627 - INFO - Query executed successfully.
+2026-06-03 16:00:08,629 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 16:00:08,629 - INFO - Database connection closed.
+2026-06-03 16:00:28,475 - INFO - User canceled input workflow.
+2026-06-03 16:00:28,476 - ERROR - 
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\menus\application_menu.py", line 216, in handle_university_applications_menu
+    university_application_id = get_integer("Enter the university application id: ", 1, check_university_application_exist, "University application does not exist.")
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\utils\input_helpers.py", line 82, in get_integer
+    return _execute_abstract_input_workflow(prompt, cast_logic, validation_logic)
+  File "C:\Users\Lenovo\OneDrive\Desktop\International Student Transition & Career Intelligence Platform\utils\input_helpers.py", line 16, in _execute_abstract_input_workflow
+    raise BackSignal()
+utils.exceptions.BackSignal
+2026-06-03 16:00:31,373 - INFO - Opening PostgreSQL database connection.
+2026-06-03 16:00:31,567 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 16:00:31,568 - INFO - Executing database query.
+2026-06-03 16:00:31,592 - INFO - Query executed successfully.
+2026-06-03 16:00:31,593 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 16:00:31,593 - INFO - Database connection closed.
+2026-06-03 16:01:13,061 - INFO - Opening PostgreSQL database connection.
+2026-06-03 16:01:13,154 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 16:01:13,154 - INFO - Executing database query.
+2026-06-03 16:01:13,173 - INFO - Query executed successfully.
+2026-06-03 16:01:13,173 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 16:01:13,173 - INFO - Database connection closed.
+2026-06-03 16:02:05,378 - INFO - GlobalTransit Platform Logging System Initialized Natively.
+2026-06-03 16:02:09,049 - INFO - Opening PostgreSQL database connection.
+2026-06-03 16:02:09,153 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 16:02:09,153 - INFO - Executing database query.
+2026-06-03 16:02:09,175 - INFO - Query executed successfully.
+2026-06-03 16:02:09,175 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 16:02:09,176 - INFO - Database connection closed.
+2026-06-03 16:02:21,861 - INFO - Opening PostgreSQL database connection.
+2026-06-03 16:02:21,953 - INFO - Successfully connected to the PostgreSQL database.
+2026-06-03 16:02:21,953 - INFO - Executing database query.
+2026-06-03 16:02:21,968 - INFO - Query executed successfully.
+2026-06-03 16:02:21,968 - INFO - Data fetched from cursor memory buffer.
+2026-06-03 16:02:21,969 - INFO - Database connection closed.

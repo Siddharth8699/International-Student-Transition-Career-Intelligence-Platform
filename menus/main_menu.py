@@ -5,6 +5,7 @@ from menus.document_menu import handle_document_management
 from menus.financial_menu import handle_financial_management
 from menus.academic_menu import handle_academic_management
 from menus.career_menu import handle_career_management
+from menus.application_menu import handle_application_management
 
 
 
@@ -22,6 +23,7 @@ def handle_main_menu():
             3. Financial Management
             4. Academic Management
             5. Career Management
+            6. Application Management
             0. Exit
 
             Enter your choice:
@@ -48,6 +50,10 @@ def handle_main_menu():
 
                 handle_career_management()
 
+            elif choice == "6":
+
+                handle_application_management()
+                
             elif choice == "0":
 
                 print("Exiting system...")

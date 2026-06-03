@@ -67,7 +67,6 @@ WORK_MODES = {
 
 
 QUERYABLE_SCHEMA = {
-
     "users": {
         "user_id",
         "full_name",
@@ -79,7 +78,6 @@ QUERYABLE_SCHEMA = {
     "document_types": {
         "document_type_id",
         "name",
-        "global_category",
         "description"
     },
 
@@ -127,7 +125,8 @@ QUERYABLE_SCHEMA = {
         "degree",
         "field_of_study",
         "duration_semesters",
-        "tuition_fee"
+        "tuition_fee",
+        "requirement_url"
     },
 
     "intakes": {
@@ -142,8 +141,8 @@ QUERYABLE_SCHEMA = {
         "job_id",
         "company_id",
         "title",
-        "description",
         "location",
+        "description",
         "work_mode",
         "job_type",
         "salary_min",
@@ -152,6 +151,52 @@ QUERYABLE_SCHEMA = {
         "posted_date",
         "application_deadline",
         "source_url"
-    }
+    },
 
+    "user_documents_checklist": {
+        "id",
+        "user_id",
+        "document_type_id",
+        "is_ready"
+    },
+
+    "user_readiness_cache": {
+        "user_id",
+        "has_passport",
+        "has_transcripts",
+        "has_bachelors_degree",
+        "has_highschool_cert",
+        "has_aps_certificate",
+        "has_resume",
+        "has_cover_letter",
+        "has_language_proof",
+        "ready_for_uni",
+        "ready_for_job"
+    },
+
+    "application_statuses": {
+        "application_status_id",
+        "status_name"
+    },
+
+    "university_applications": {
+        "university_application_id",
+        "user_id",
+        "intake_id",
+        "status_id",
+        "application_guidance_token",
+        "target_year",
+        "application_platform",
+        "platform_url",
+        "notes",
+        "applied_date"
+    },
+
+    "university_application_history": {
+        "university_application_history_id",
+        "university_application_id",
+        "status_id",
+        "notes",
+        "changed_at"
+    }
 }
